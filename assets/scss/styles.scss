@@ -5,8 +5,201 @@
 $global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 
 
+
 //
 // Import PrimoCSS framework
 //
 
 @import '../../node_modules/primocss/scss/primocss';
+
+
+
+//
+// Documentation styles
+//
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $color-navy;
+  font-weight: $font-weight-rg;
+
+  padding: {
+    top: $global-spacing-unit-sm;
+  }
+}
+
+p {
+
+  + * {
+
+    margin: {
+      top: calc(#{$global-spacing-unit} / 4 * 6);
+    }
+  }
+}
+
+a {
+
+  &:focus {
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba($color-blue, .2);
+    outline: 1px solid $color-blue;
+    outline-offset: 4px;
+  }
+}
+
+.strip {
+  border: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+  @include set-breakpoint-max(lg) {
+    flex-direction: column;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &__sidebar {
+
+    border: {
+      right: 0;
+    }
+
+    flex: 0 0 auto;
+    max-width: 100%;
+    width: 100%;
+
+    @include set-breakpoint-min(lg) {
+      border: {
+        right: 1px solid lighten($color-navy-light, 60%);
+      }
+
+      max-width: 300px;
+    }
+
+    @include set-breakpoint-min(xl) {
+      max-width: 380px;
+    }
+  }
+}
+
+.sidebar {
+
+  &__logo {
+    border: {
+      bottom: 1px solid lighten($color-navy-light, 60%);
+    }
+
+    color: $color-navy;
+    padding: $global-spacing-unit;
+
+    @include set-breakpoint-min(lg) {
+      padding: $global-spacing-unit-xl;
+    }
+
+    img {
+      height: 50px;
+      margin: 0 auto;
+
+      @include set-breakpoint-min(lg) {
+        height: auto;
+        margin: 0;
+      }
+    }
+  }
+
+  &__nav {
+    margin: 0;
+
+    &-list {
+      list-style: none;
+      padding: 0;
+
+      .sidebar__nav-list {
+        padding-left: $global-spacing-unit;
+      }
+    }
+
+    &-group {
+      border: {
+        bottom: 1px solid lighten($color-navy-light, 60%);
+      }
+
+      margin: 0;
+    }
+
+    &-title {
+      @include font-size(18px);
+      border: 0;
+      border-radius: 0;
+      color: $color-navy;
+      background: none;
+      font-weight: $font-weight-rg;
+      padding: $global-spacing-unit;
+      position: relative;
+      text-align: left;
+      width: 100%;
+
+      &:hover {
+        background-color: rgba(lighten($color-navy-light, 65%), .3);
+        color: $color-navy;
+      }
+
+      &:focus {
+        background-color: $color-transparent;
+        box-shadow: 2px 2px 5px rgba($color-blue, .2);
+        outline: 1px solid $color-blue;
+        outline-offset: -1px;
+
+        &:after {
+          color: $color-blue;
+        }
+      }
+
+      &:after {
+        @include pseudo($content: '+');
+        color: lighten($color-navy-light, 60%);
+        right: $global-spacing-unit;
+        top: $global-spacing-unit;
+      }
+
+      &[aria-selected="true"] {
+
+        &:after {
+          @include pseudo($content: '-');
+        }
+      }
+    }
+
+    &-section {
+      background-color: rgba(lighten($color-navy-light, 65%), .5);
+
+      border: {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 1px solid lighten($color-navy-light, 60%);
+      }
+
+      margin: 0;
+      padding: $global-spacing-unit;
+    }
+
+    &-link,
+    &-link:link {
+      text-decoration: none;
+    }
+  }
+}
