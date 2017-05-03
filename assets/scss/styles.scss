@@ -43,6 +43,7 @@ p {
 
 a {
 
+  // Applies a blue outline for accessibility
   &:focus {
     border-radius: 2px;
     box-shadow: 0 0 5px rgba($color-blue, .2);
@@ -51,6 +52,7 @@ a {
   }
 }
 
+// Removes all borders from strip classes
 .strip {
   border: 0;
 }
@@ -64,6 +66,12 @@ a {
     flex-direction: column;
   }
 
+  @include set-breakpoint-max(md) {
+    display: block;
+  }
+
+  // Content container houses all content in the docs and has the ability to
+  // scroll
   &__content {
     flex: 1 1 auto;
     position: relative;
@@ -71,6 +79,7 @@ a {
     overflow-x: hidden;
   }
 
+  // The sidebar is ridged and aside to the content block
   &__sidebar {
 
     border: {
@@ -94,6 +103,12 @@ a {
     }
   }
 }
+
+//
+// Sidebar pattern
+//
+// This is to be used as the primary navigation for the PrimoCSS docs theme
+//
 
 .sidebar {
 
@@ -175,6 +190,7 @@ a {
         top: $global-spacing-unit;
       }
 
+      // When selected using aria-selected changes the '+' to a '-'
       &[aria-selected="true"] {
 
         &:after {
@@ -201,6 +217,7 @@ a {
     &-link:link {
       text-decoration: none;
 
+      // Applies active state using aria-current
       &[aria-current="page"] {
         color: $color-grey-darkest;
         font-weight: $font-weight-sb;
