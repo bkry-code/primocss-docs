@@ -4,4 +4,4 @@
             <h1><?= $site->title()->html() ?></h1>
         </div>
         <?php snippet('menu') ?>
-        </header>
+    </header>

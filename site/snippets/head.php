@@ -22,9 +22,14 @@
     <script>
         $(document).ready(function(){
             var clickCheck = false,
-                link = $('.sidebar__nav-link[aria-current="page"]');
+                currentLink = $('.sidebar__nav-link[aria-current="page"]');
 
-            link.closest('.sidebar__nav-section').attr('aria-hidden', 'false').show();
+            currentLink.closest('sidebar__nav-title').attr({
+                'aria-expanded': 'true',
+                'aria-selected': 'true'
+            }).show();
+
+            currentLink.closest('.sidebar__nav-section').attr('aria-hidden', 'false').show();
 
             $(document).on('click', '.sidebar__nav-title', function(){
                 if(!clickCheck){

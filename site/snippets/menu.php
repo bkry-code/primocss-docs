@@ -11,7 +11,7 @@ if($items->count()):
     <ul class="sidebar__nav-list">
         <?php foreach($items as $item): ?>
         <li class="sidebar__nav-group">
-            <button class="sidebar__nav-title" id="<?php echo $item->title()->html() ?>-tab" role="tab" aria-controls="<?php echo $item->title()->html() ?>"><?php echo $item->title()->html() ?></button>
+            <button class="sidebar__nav-title" id="<?php echo $item->title()->html() ?>-tab" role="tab" aria-controls="<?php echo $item->title()->html() ?>" aria-expanded="false" aria-selected="false"><?php echo $item->title()->html() ?></button>
             <?php
 
             // get all children for the current menu item
