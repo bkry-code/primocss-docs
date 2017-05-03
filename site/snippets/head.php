@@ -21,7 +21,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-            var clickCheck = false;
+            var clickCheck = false,
+                link = $('.sidebar__nav-link[aria-current="page"]');
+
+            link.closest('.sidebar__nav-section').show();
 
             $(document).on('click', '.sidebar__nav-title', function(){
                 if(!clickCheck){

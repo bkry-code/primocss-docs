@@ -21,7 +21,7 @@ if($items->count()):
             if($children->count() > 0):
 
             ?>
-            <section class="sidebar__nav-section" id="overview" role="tabpanel" aria-hidden="false" aria-labelledby="<?php echo $item->title()->html() ?>-tab">
+            <section class="sidebar__nav-section" id="overview" role="tabpanel" hidden aria-hidden="true" aria-labelledby="<?php echo $item->title()->html() ?>-tab">
                 <ul class="sidebar__nav-list">
                     <?php foreach($children as $child): ?>
                     <li class="sidebar__nav-item">
