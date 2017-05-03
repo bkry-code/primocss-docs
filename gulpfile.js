@@ -6,7 +6,7 @@ cssnano = require('gulp-cssnano'),
 sassLint = require('gulp-sass-lint'),
 rename = require('gulp-rename'),
 sourcemaps = require('gulp-sourcemaps'),
-sassPath = 'scss/docs.scss';
+sassPath = 'assets/scss/styles.scss';
 
 // Gulp help instructions triggered as Gulp default task
 gulp.task('help', function() {
@@ -30,7 +30,7 @@ function throwSassError(sassError) {
 
 // Lints Sass and provides errors
 gulp.task('lint:sass', function() {
-  return gulp.src('scss/**/*.s+(a|c)ss')
+  return gulp.src('assets/scss/**/*.s+(a|c)ss')
     .pipe(sassLint({
       options: {
           configFile: '.sass-lint.yml'
@@ -47,7 +47,7 @@ gulp.task('sass:develop', function() {
     .pipe(sass({ style: 'expanded', errLogToConsole: true }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
     .pipe(sourcemaps.write('maps/'))
-    .pipe(gulp.dest('build/css/'))
+    .pipe(gulp.dest('assets/css/'))
 });
 
 // Build Sass for production
@@ -60,10 +60,10 @@ gulp.task('sass:build', function() {
       onError: throwSassError
     }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-    .pipe(gulp.dest('build/css/'))
+    .pipe(gulp.dest('assets/css/'))
     .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('build/css/'));
+    .pipe(gulp.dest('assets/css/'));
 });
 
 // Gulp default tasks
