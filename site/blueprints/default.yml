@@ -1,10 +1,14 @@
 title: Page
-pages: true
+
+pages: default
+
 files: true
+
 fields:
   title:
     label: Title
     type:  text
+
   text:
     label: Text
     type:  textarea
