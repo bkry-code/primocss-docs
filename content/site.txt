@@ -1,1 +1,20 @@
-Title: Site Title
+Title: PrimoCSS
+
+----
+
+Author: Richard McCartney
+
+----
+
+Description: PrimoCSS, a simple and mobile friendly HTML, CSS and SCSS framework for web and UI developments.
+
+----
+
+Copyright: <small>&copy; PrimoCSS 2017. <a href="http://primocss.com/">Documentation</a> | <a href="https://github.com/primocss/primocss" aria-label="GitHub repo link for Primo CSS">GitHub</a>.</small>
+
+----
+
+Creation: 
+
+<p class="u-align-right"><small>Created with ♥ by <a href="http://mccartney.io" aria-label="Portfolio website for Richard McCartney">Richard McCartney</a>.</small>
+<small>Built with <a href="http://getkirby.com" aria-label="Kirby CMS">Kirby</a>.</small><small>Hosted on <a href="http://digitalocean.com" aria-label="Digital ocean hosting">Digital Ocean</a>.</small> </p>
