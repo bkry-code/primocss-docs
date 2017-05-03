@@ -202,7 +202,8 @@ a {
       text-decoration: none;
 
       &[aria-current="page"] {
-        font-weight: $font-weight-bd;
+        color: $color-grey-darkest;
+        font-weight: $font-weight-sb;
       }
     }
   }
