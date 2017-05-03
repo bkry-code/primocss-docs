@@ -200,6 +200,10 @@ a {
     &-link,
     &-link:link {
       text-decoration: none;
+
+      &[aria-current="page"] {
+        font-weight: $font-weight-bd;
+      }
     }
   }
 }
