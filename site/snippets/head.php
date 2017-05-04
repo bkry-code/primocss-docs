@@ -24,7 +24,7 @@
             var clickCheck = false,
                 currentLink = $('.sidebar__nav-link[aria-current="page"]');
 
-            currentLink.closest('sidebar__nav-title').attr({
+            currentLink.closest('.sidebar__nav-section').prev('.sidebar__nav-title').attr({
                 'aria-expanded': 'true',
                 'aria-selected': 'true'
             }).show();

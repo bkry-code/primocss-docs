@@ -52,6 +52,10 @@ a {
   }
 }
 
+pre {
+  background-color: $color-grey-lighter;
+}
+
 // Removes all borders from strip classes
 .strip {
   border: 0;
@@ -68,6 +72,7 @@ a {
   // Content container houses all content in the docs and has the ability to
   // scroll
   &__content {
+    background: rgba(lighten($color-navy-light, 65%), .1);
     flex: 1 1 auto;
     position: relative;
     overflow-y: auto;
@@ -87,9 +92,10 @@ a {
 
     @include set-breakpoint-min(lg) {
       border: {
-        right: 1px solid lighten($color-navy-light, 60%);
+        right: 1px solid $color-grey-lighter;
       }
 
+      box-shadow: 1px 0 50px 1px rgba($color-grey-darkest, .06);
       max-width: 300px;
     }
 
@@ -109,7 +115,7 @@ a {
 
   &__logo {
     border: {
-      bottom: 1px solid lighten($color-navy-light, 60%);
+      bottom: 1px solid $color-grey-lighter;
     }
 
     color: $color-navy;
@@ -144,7 +150,7 @@ a {
 
     &-group {
       border: {
-        bottom: 1px solid lighten($color-navy-light, 60%);
+        bottom: 1px solid $color-grey-lighter;
       }
 
       margin: 0;
@@ -157,10 +163,14 @@ a {
       color: $color-navy;
       background: none;
       font-weight: $font-weight-rg;
-      padding: $global-spacing-unit;
+      padding: $global-spacing-unit $global-spacing-unit $global-spacing-unit $global-spacing-unit-xl;
       position: relative;
       text-align: left;
       width: 100%;
+
+      @include set-breakpoint-max(lg) {
+        padding-left: $global-spacing-unit;
+      }
 
       &:hover {
         background-color: rgba(lighten($color-navy-light, 65%), .3);
@@ -180,9 +190,15 @@ a {
 
       &:after {
         @include pseudo($content: '+');
-        color: lighten($color-navy-light, 60%);
+        background-color: $color-grey-lighter;
+        border-radius: $global-border-radius;
+        color: $color-grey-dark;
+        height: 27px;
+        padding: 0 $global-spacing-unit-xs;
         right: $global-spacing-unit;
+        text-align: center;
         top: $global-spacing-unit;
+        width: 27px;
       }
 
       // When selected using aria-selected changes the '+' to a '-'
@@ -190,22 +206,26 @@ a {
 
         &:after {
           @include pseudo($content: '-');
+          background-color: $color-blue;
+          color: $color-white;
         }
       }
     }
 
     &-section {
-      background-color: rgba(lighten($color-navy-light, 65%), .5);
-
       border: {
         bottom: 0;
         left: 0;
         right: 0;
-        top: 1px solid lighten($color-navy-light, 60%);
+        top: 1px solid $color-grey-lighter;
       }
 
       margin: 0;
-      padding: $global-spacing-unit;
+      padding: $global-spacing-unit $global-spacing-unit $global-spacing-unit $global-spacing-unit-xl;
+
+      @include set-breakpoint-max(lg) {
+        padding-left: $global-spacing-unit;
+      }
     }
 
     &-link,

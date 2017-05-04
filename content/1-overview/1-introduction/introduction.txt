@@ -1,0 +1,61 @@
+Title: Introduction
+
+----
+
+Intro: 
+
+###PrimoCSS is a framework which provides the prime starting blocks for any front-end requirements. Without supplying out of the box solutions or mantras to follow, it creates a solid architecture footing to complete any project.
+
+<p>
+<iframe id="twitter-widget-0" onclick="ga('send', 'event', 'Twitter', 'Click','Twitter share');" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="http://platform.twitter.com/widgets/tweet_button.a0ec3119d8db2bc5422f2144c89ad7a9.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Fprimocss.com%2F&amp;related=rich_mccartney&amp;size=m&amp;text=PrimoCSS%20-%20A%20simple%20and%20mobile%20friendly%20HTML%2C%20CSS%20and%20SCSS%20framework.&amp;time=1489676753004&amp;type=share&amp;url=http%3A%2F%2Fwww.primocss.com&amp;via=rich_mccartney" style="position: static; visibility: visible; width: 61px; height: 20px;" data-url="http://www.primocss.com"></iframe>
+<iframe allowtransparency="true" scrolling="no" frameborder="0" src="https://buttons.github.io/buttons.html#href=https%3A%2F%2Fgithub.com%2Fprimocss%2Fprimocss&amp;aria-label=Star%20primocss%2Fprimocss%20on%20GitHub&amp;data-text=Star&amp;data-show-count=true" style="width: 75.5px; height: 20px; border: none;"></iframe>
+<iframe allowtransparency="true" scrolling="no" frameborder="0" src="https://buttons.github.io/buttons.html#href=https%3A%2F%2Fgithub.com%2Fprimocss%2Fprimocss%2Ffork&amp;aria-label=Fork%20primocss%2Fprimocss%20on%20GitHub&amp;data-text=Fork&amp;data-show-count=true" style="width: 77px; height: 20px; border: none;"></iframe>
+</p>
+
+----
+
+About: 
+
+<div class="grid-col-12 grid-lg-col-4">
+<svg class="u-width-full" width="92" height="70" viewBox="0 0 92 70" xmlns="http://www.w3.org/2000/svg"><title>Code icon</title><path d="M60.715.223c-.39-.005-.764.203-.914.578L29.9 68.3c-.2.5 0 1.1.5 1.3.1.1.3.1.4.1.3 0 .7-.2.9-.6L61.6 1.6c.2-.5 0-1.1-.5-1.3-.125-.05-.255-.076-.385-.077zM24.738 15.3c-.262-.024-.538.05-.738.2L.4 34.2c-.3.2-.4.5-.4.8 0 .3.1.6.4.8L24 54.5c.2.1.4.2.6.2.2 0 .5-.1.8-.4.3-.4.2-1.1-.2-1.4L2.6 35l22.6-17.9c.5-.3.5-1 .2-1.4-.15-.25-.4-.374-.662-.4zm42.524.038c-.263.037-.512.16-.662.36-.3.4-.2 1.102.2 1.402L89.4 35 66.8 52.9c-.5.3-.5 1-.2 1.4.2.3.5.4.8.4.3 0 .5-.1.7-.2l23.5-18.7c.3-.2.4-.5.4-.8 0-.3-.2-.6-.4-.8L68 15.5c-.2-.15-.476-.2-.738-.162z" fill-rule="nonzero" fill="#00a6ed"></path></svg>
+<h3 class="u-align-center">Great starting point</h3>
+<p>All the styles and tools have been created as the perfect starting point for your project. This isn't a full framework trying to impose design styles and mantras.</p>
+</div>
+<div class="grid-col-12 grid-lg-col-4">
+<svg class="u-width-full" xmlns="http://www.w3.org/2000/svg" width="92" height="70" viewBox="0 0 512 384"><title>The SASS language logo</title><path fill="#00a6ed" d="M440.6 220.6c-17.9.1-33.4 4.4-46.4 10.8-4.8-9.5-9.6-17.8-10.4-24-.9-7.2-2-11.6-.9-20.2s6.1-20.8 6.1-21.8c-.1-.9-1.1-5.3-11.4-5.4-10.3-.1-19.2 2-20.2 4.7s-3 8.9-4.3 15.3c-1.8 9.4-20.6 42.7-31.3 60.2-3.5-6.8-6.5-12.8-7.1-17.6-.9-7.2-2-11.6-.9-20.2s6.1-20.8 6.1-21.8c-.1-.9-1.1-5.3-11.4-5.4-10.3-.1-19.2 2-20.2 4.7s-2.1 9.1-4.3 15.3c-2.1 6.2-27.1 61.8-33.6 76.3-3.3 7.4-6.2 13.3-8.3 17.3s-.1.3-.3.7c-1.8 3.4-2.8 5.3-2.8 5.3v.1c-1.4 2.5-2.9 4.9-3.6 4.9-.5 0-1.5-6.7.2-15.9 3.7-19.3 12.7-49.4 12.6-50.5 0-.5 1.7-5.8-5.8-8.5-7.3-2.7-9.9 1.8-10.5 1.8-.6 0-1.1 1.6-1.1 1.6s8.1-33.9-15.5-33.9c-14.8 0-35.2 16.1-45.3 30.8-6.4 3.5-20 10.9-34.4 18.8-5.5 3-11.2 6.2-16.6 9.1l-1.1-1.2c-28.6-30.5-81.5-52.1-79.3-93.1.8-14.9 6-54.2 101.6-101.8 78.3-39 141-28.3 151.9-4.5 15.5 34-33.5 97.2-114.9 106.3-31 3.5-47.3-8.5-51.4-13-4.3-4.7-4.9-4.9-6.5-4-2.6 1.4-1 5.6 0 8.1 2.4 6.3 12.4 17.5 29.4 23.1 14.9 4.9 51.3 7.6 95.3-9.4 49.3-19.1 87.8-72.1 76.5-116.4-11.5-45.1-86.3-59.9-157-34.8-42.1 15-87.7 38.4-120.5 69.1C4 117.9-2.2 149.7.4 162.9c9.1 47.1 74 77.8 100 100.5-1.3.7-2.5 1.4-3.6 2-13 6.4-62.5 32.3-74.9 59.7-14 31 2.2 53.3 13 56.3 33.4 9.3 67.6-7.4 86.1-34.9 18.4-27.5 16.2-63.2 7.7-79.5l-.3-.6 10.2-6c6.6-3.9 13.1-7.5 18.8-10.6-3.2 8.7-5.5 19-6.7 34-1.4 17.6 5.8 40.4 15.3 49.4 4.2 3.9 9.2 4 12.3 4 11 0 16-9.1 21.5-20 6.8-13.3 12.8-28.7 12.8-28.7s-7.5 41.7 13 41.7c7.5 0 15-9.7 18.4-14.7v.1s.2-.3.6-1c.8-1.2 1.2-1.9 1.2-1.9v-.2c3-5.2 9.7-17.1 19.7-36.8 12.9-25.4 25.3-57.2 25.3-57.2s1.2 7.8 4.9 20.6c2.2 7.6 7 15.9 10.7 24-3 4.2-4.8 6.6-4.8 6.6l.1.1c-2.4 3.2-5.1 6.6-7.9 10-10.2 12.2-22.4 26.1-24 30.1-1.9 4.7-1.5 8.2 2.2 11 2.7 2 7.5 2.4 12.6 2 9.2-.6 15.6-2.9 18.8-4.3 5-1.8 10.7-4.5 16.2-8.5 10-7.4 16.1-17.9 15.5-31.9-.3-7.7-2.8-15.3-5.9-22.5.9-1.3 1.8-2.6 2.7-4 15.8-23.1 28-48.5 28-48.5s1.2 7.8 4.9 20.6c1.9 6.5 5.7 13.6 9.1 20.6-14.8 12.1-24.1 26.1-27.3 35.3-5.9 17-1.3 24.7 7.4 26.5 3.9.8 9.5-1 13.7-2.8 5.2-1.7 11.5-4.6 17.3-8.9 10-7.4 19.6-17.7 19.1-31.6-.3-6.4-2-12.7-4.3-18.7 12.6-5.2 28.9-8.2 49.6-5.7 44.5 5.2 53.3 33 51.6 44.6-1.7 11.6-11 18-14.1 20-3.1 1.9-4.1 2.6-3.8 4 .4 2.1 1.8 2 4.5 1.6 3.7-.6 23.4-9.5 24.2-30.9 1.2-27.5-24.9-57.5-71.2-57.2zM97.4 336.3c-14.7 16.1-35.4 22.2-44.2 17-9.5-5.5-5.8-29.2 12.3-46.3 11-10.4 25.3-20 34.7-25.9 2.1-1.3 5.3-3.2 9.1-5.5.6-.4 1-.6 1-.6.7-.4 1.5-.9 2.3-1.4 6.7 24.4.3 45.8-15.2 62.7zm107.5-73.1c-5.1 12.5-15.9 44.6-22.4 42.8-5.6-1.5-9-25.8-1.1-49.8 4-12.1 12.5-26.5 17.5-32.1 8.1-9 16.9-12 19.1-8.3 2.6 4.8-9.9 39.6-13.1 47.4zm88.7 42.4c-2.2 1.1-4.2 1.9-5.1 1.3-.7-.4.9-1.9.9-1.9s11.1-11.9 15.5-17.4c2.5-3.2 5.5-6.9 8.7-11.1v1.2c0 14.4-13.8 24-20 27.9zM362 290c-1.6-1.2-1.4-4.9 4-16.5 2.1-4.6 6.9-12.3 15.2-19.6 1 3 1.6 5.9 1.5 8.6-.1 18-12.9 24.7-20.7 27.5z"></path></svg>
+<h3 class="u-align-center">Built with Sass &amp; Gulp</h3>
+<p>Using Gulp to create tests and build steps. Developing the source code using <a href="http://sass-lang.com/" aria-label="Link to the Sass language website" onclick="ga('send', 'event', 'Sass', 'Click','Sass link');">SASS</a> and harnessing the powerful preprocessor for our css.</p>
+</div>
+<div class="grid-col-12 grid-lg-col-4">
+<svg class="u-width-full" xmlns="http://www.w3.org/2000/svg" width="149" height="74" viewBox="0 0 149 74"><title>Pictures of a laptop and mobile phone</title><g fill="#00a6ed" fill-rule="nonzero"><path d="M42.4.9c-2.3 0-4.2 1.9-4.2 4.2v60c0 .278.033.542.08.8H28.1c-.6 0-1.1.5-1.1 1.1v3.2c0 .2.1.4.2.6.2.2 2 2.3 7 2.3h107.3c5 0 7.1-2.1 7.2-2.1.2-.2.3-.4.3-.7v-2.6c0-.17-.04-.318-.1-.452V67c0-.6-.5-1.1-1.1-1.1H137.52c.05-.256.082-.52.082-.8v-60c0-2.3-1.9-4.2-4.2-4.2h-91zm-.1 2h91c1.2 0 2.2 1 2.2 2.2v60c0 .283-.068.553-.168.8H40.27c-.1-.247-.17-.517-.17-.8v-60c0-1.2 1-2.2 2.2-2.2zm2.2 3.6c-.3 0-.5.2-.5.5v55c0 .3.2.5.5.5h86.8c.3 0 .5-.3.5-.5V7c0-.3-.2-.5-.5-.5H44.5zm.5 1h85.8v54H45v-54zM29 67.9h49.527c.43.912 1.704 1.3 2.672 1.3h13.1c.664 0 1.796-.42 2.225-1.3H146.9v.9c0 .17.04.318.1.452v.55c-.7.5-2.4 1.397-5.5 1.397H34.2c-3.1 0-4.7-1-5.2-1.4v-1.9zm50.943 0h15.29c-.295.182-.666.3-.932.3H81.2c-.427 0-.898-.118-1.257-.3zM3.603 22C1.608 22 0 23.608 0 25.603v43.794C0 71.392 1.608 73 3.603 73h18.073c1.996 0 3.602-1.608 3.547-3.603V25.603c0-1.995-1.608-3.603-3.603-3.603H3.603zm.663 2H20.63c1.258 0 2.265 1.068 2.265 2.403v42.194c0 1.335-1.007 2.403-2.266 2.403H4.265C3.006 71 2 69.932 2 68.597V26.403C2 25.068 3.007 24 4.266 24zm4.548 1.827c-.388 0-.664.278-.664.666s.276.665.664.665c.333 0 .666-.277.666-.665s-.278-.666-.666-.666zm1.996.11c-.277 0-.498.222-.498.5v.11c0 .278.22.5.498.5h3.715c.277 0 .443-.222.5-.5v-.11c0-.278-.223-.5-.5-.5H10.81zm-1.996.334c.11 0 .222.112.222.223 0 .11-.11.22-.222.22-.11 0-.222-.11-.222-.22s.11-.222.222-.222zm1.94.11h3.715s.055 0 .055.057v.11s0 .056-.056.056h-3.715s-.056 0-.056-.055v-.11s0-.057.055-.057zM3.258 28c-.154 0-.257.108-.257.27v35.46c0 .162.103.27.257.27h18.486c.154 0 .257-.108.257-.27V28.27c0-.162-.103-.27-.257-.27H3.257zM4 29h17v34H4V29zm8.64 36.515c-1.165 0-2.107.94-2.107 2.105s.942 2.107 2.107 2.107c1.164 0 2.107-.942 2.107-2.107 0-1.164-.943-2.105-2.107-2.105zm0 .442c.942 0 1.663.776 1.663 1.663s-.72 1.663-1.663 1.663c-.887 0-1.663-.776-1.663-1.663s.72-1.663 1.663-1.663z"></path></g></svg>
+<h3 class="u-align-center">Every view is possible</h3>
+<p>With a powerful responsive grid. Any design is possible for all devices and effectively scales from handhelds to desktops.</p>
+</div>
+
+----
+
+Faq: 
+
+<div class="grid-col-12">
+<div class="grid-row">
+<div class="grid-col-12">
+<h2>Frequently asked questions</h2>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4">
+<h3>Is PrimoCSS open source?</h3>
+<p>Absolutely, PrimoCSS has been created with the inention of it being open-source and anyone able to contribute to the framework or atleast fork it on GitHub and turn it into something of their own.</p>
+<p>If you wish to take a look at the source code and get involved visit the <a href="http://github.com/primocss/primocss" aria-label="External link to the GitHub page for PrimoCSS">GitHub page</a>.</p>
+</div>
+<div class="grid-col-12 grid-md-col-4">
+<h3>How can I use the framework for my work?</h3>
+<p>Just follow the <a href="#">setup guides</a>, there are various ways for anyone to kick-start their projects from hosting the <abbr title="cascading stylesheet">CSS</abbr> or include the <abbr title="syntactically awesome stylesheet">SASS</abbr> source and take advantage of all the tools available.</p>
+</div>
+<div class="grid-col-12 grid-md-col-4">
+<h3>Got any examples of it in use?</h3>
+<p>If you follow this link to the <a href="#">examples page</a> you'll find an array of pre-made example templates using the framework.</p>
+<p>Would you like to show case your work here? <a href="#">Send us a message</a> and we can spotlight your work on this site.</p>
+</div>
+</div>
+</div>

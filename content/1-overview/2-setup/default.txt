@@ -3,3 +3,77 @@ Title: Setup
 ----
 
 Text: 
+
+### Hotlink
+
+If you just need to include the latest compiled version of the PrimoCSS Framework, use our hosted version to begin your project.
+
+``` html
+<link href="http://primocss.com/build/css/primocss.min.css" rel="stylesheet" media="screen" type="text/css">
+```
+
+Now you're all done, your site or project has PrimoCSS at its core and you can start to build simple but effective responsive designs. Follow on reading for our basic HTML template.
+
+### Basic template
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="http://primocss.com/build/css/primocss.min.css" rel="stylesheet" media="screen" type="text/css">
+    </head>
+    <body>
+        <h1>Hello, world!</h1>
+    </body>
+</html>
+```
+
+### Package manager installation
+
+PrimoCSS can be installed to any project using different package managers and obtain the SCSS source files. To pull down the latest release use the following commands with NPM, Yarn or Bower;
+
+*npm:*
+
+``` bash
+npm install primocss --save-dev
+```
+
+*Yarn:*
+
+``` bash
+yarn add primocss
+```
+
+*Bower:*
+
+```bash
+bower install primocss --save-dev
+```
+
+### Local development
+
+If you would like to help and improve this project in anyway or use the project and develop on it locally follow these commands to help. Start by [downloading via GitHub](https://github.com/primocss/primocss/archive/master.zip) or git cloning the project ```git clone git@github.com:primocss/primocss.git```.
+
+To setup, here is a list of commands to help you get started:
+
+``` bash
+npm install
+gulp build
+```
+
+Once complete open the ```build``` folder to see the newly created CSS. 
+
+You can override any of the global settings for PrimoCSS via [_settings.defaults.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.defaults.scss) and [_settings.colors.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.colors.scss). Development requires the latest version of [Node.js](https://nodejs.org/en/).
+
+### Browser support
+
+- Chrome latest
+- Firefox latest
+- Opera latest
+- Safari latest
+- IE Latest
+
+Using the latest technologies, PrimoCSS is aimed at new browsers and will attempt to degrade gracefully to previous versions.
