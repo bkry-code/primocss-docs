@@ -58,16 +58,11 @@ a {
 }
 
 .flex-container {
-  display: flex;
   flex-direction: row;
   height: 100%;
 
-  @include set-breakpoint-max(lg) {
-    flex-direction: column;
-  }
-
-  @include set-breakpoint-max(md) {
-    display: block;
+  @include set-breakpoint-min(lg) {
+    display: flex;
   }
 
   // Content container houses all content in the docs and has the ability to
