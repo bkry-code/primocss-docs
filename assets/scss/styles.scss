@@ -13,6 +13,12 @@ $global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv
 @import '../../node_modules/primocss/scss/primocss';
 
 
+* {
+
+  + hr {
+    margin-top: $global-spacing-unit-lg;
+  }
+}
 
 //
 // Documentation styles
@@ -22,12 +28,17 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   color: $color-navy;
   font-weight: $font-weight-rg;
 
   padding: {
     top: $global-spacing-unit-sm;
+  }
+
+  small {
+    color: $color-grey;
   }
 }
 
@@ -52,8 +63,20 @@ a {
   }
 }
 
-pre {
-  background-color: $color-grey-lighter;
+hr {
+  border: {
+    color: $color-grey-lighter;
+    style: solid;
+    width: 1px;
+  }
+
+  margin: {
+    top: $global-spacing-unit-xl;
+  }
+
+  + * {
+    margin-top: $global-spacing-unit-lg;
+  }
 }
 
 // Removes all borders from strip classes
@@ -95,13 +118,29 @@ pre {
         right: 1px solid $color-grey-lighter;
       }
 
-      box-shadow: 1px 0 50px 1px rgba($color-grey-darkest, .06);
+      box-shadow: 1px 0 20px 1px rgba($color-grey-darkest, .06);
       max-width: 300px;
     }
 
     @include set-breakpoint-min(xl) {
       max-width: 380px;
     }
+  }
+}
+
+//
+// Box pattern
+//
+
+.box {
+  padding: $global-spacing-unit;
+  border-radius: $global-border-radius;
+
+  &--panel {
+    background: $color-white;
+    border: 1px solid $color-grey-lighter;
+    box-shadow: 0 1px 20px 1px rgba($color-grey-darkest, .06);
+    padding: $global-spacing-unit-lg;
   }
 }
 

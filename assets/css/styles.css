@@ -556,14 +556,14 @@ pre {
 pre {
   font-size: 14px;
   font-size: 0.875rem;
-  background-color: #fff;
+  background-color: #f7f7f7;
   border-color: #eee;
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
   color: #666;
   overflow: auto;
-  padding: 16px; }
+  padding: 32px; }
   @media screen and (max-width: 768px) {
     pre {
       font-size: 13px;
@@ -583,11 +583,15 @@ abbr[title] {
     cursor: help; }
 
 code {
+  font-size: 14px;
+  font-size: 0.875rem;
   background-color: #eee;
   border-radius: 4px;
   padding: 4px; }
 
 mark {
+  font-size: 14px;
+  font-size: 0.875rem;
   background-color: #ffc333;
   border-radius: 4px;
   padding: 4px; }
@@ -1871,14 +1875,25 @@ option {
 .u-max-width-full {
   max-width: 100%; }
 
+* + hr {
+  margin-top: 32px; }
+
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   color: #0d2c54;
   font-weight: 400;
   padding-top: 8px; }
+  h1 small,
+  h2 small,
+  h3 small,
+  h4 small,
+  h5 small,
+  h6 small {
+    color: #888; }
 
 p + * {
   margin-top: calc(16px / 4 * 6); }
@@ -1889,8 +1904,13 @@ a:focus {
   outline: 1px solid #00a6ed;
   outline-offset: 4px; }
 
-pre {
-  background-color: #eee; }
+hr {
+  border-color: #eee;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: 64px; }
+  hr + * {
+    margin-top: 32px; }
 
 .strip {
   border: 0; }
@@ -1919,11 +1939,20 @@ pre {
     @media screen and (min-width: 1024px) {
       .flex-container__sidebar {
         border-right: 1px solid #eee;
-        box-shadow: 1px 0 50px 1px rgba(17, 17, 17, 0.06);
+        box-shadow: 1px 0 20px 1px rgba(17, 17, 17, 0.06);
         max-width: 300px; } }
     @media screen and (min-width: 1280px) {
       .flex-container__sidebar {
         max-width: 380px; } }
+
+.box {
+  padding: 16px;
+  border-radius: 4px; }
+  .box--panel {
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 1px 20px 1px rgba(17, 17, 17, 0.06);
+    padding: 32px; }
 
 .sidebar__logo {
   border-bottom: 1px solid #eee;

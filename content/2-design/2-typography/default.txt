@@ -1,0 +1,149 @@
+Title: Typography
+
+----
+
+Text: 
+
+##Typeface
+
+Currently PrimoCSS uses the system font from your OS and fall back to ```sans-serif```. To apply or change what global font you require, it can be found in _settings.defaults.scss under the ```$global-font-family``` variable. This is globally used under the ```html``` element where the default, font-size, font-weight, line-height and color for the whole framework are set.
+
+```bash
+$global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !default;
+```
+
+###Weights
+
+We have a full set of weights that can be used and changed. The base font-weight is set to 400 via the ```$global-font-weight``` variables. Here is a list of other variables that can be used for strong, light or heading font elements;
+
+```scss
+$font-weight-lt:              300 !default;
+$font-weight-rg:              400 !default;
+$font-weight-sb:              600 !default;
+$font-weight-bd:              700 !default;
+$font-weight-xb:              800 !default;
+```
+
+---
+
+##Headings
+
+All HTML headings are styled between ```<h1>``` to ```<h6>```, each element uses the ```font-heading``` mixin which sets the size, weight and responsive sizes if ```$global-responsive``` is set to true. Heading styles can be found in _elements.headings.scss.
+
+######Example
+<div class="box box--panel">
+<h1>h1. Realigned equestrian fez bewilders picky monarch<br><small>$h1-font-size | 36px</small></h1>
+<h2>h2. Realigned equestrian fez bewilders picky monarch<br><small>$h2-font-size | 30px</small></h2>
+<h3>h3. Realigned equestrian fez bewilders picky monarch<br><small>$h3-font-size | 24px</small></h3>
+<h4>h4. Realigned equestrian fez bewilders picky monarch<br><small>$h4-font-size | 20px</small></h4>
+<h5>h5. Realigned equestrian fez bewilders picky monarch<br><small>$h5-font-size | 18px</small></h5>
+<h6>h6. Realigned equestrian fez bewilders picky monarch<br><small>$h6-font-size | 16px</small></h6>
+</div>
+
+```html
+<h1>...</h1>
+<h2>...</h2>
+<h3>...</h3>
+<h4>...</h4>
+<h5>...</h5>
+<h6>...</h6>
+```
+
+---
+
+##Body copy
+
+The global default ```font-size``` is **16px** and set by ```$global-font-size```. This is controlled by ```html``` and filters through all other elements and text. Paragraph elements have a set ```margin-top``` if next to each other and keeps a set vertical scale in PrimoCSS.
+
+######Example
+<div class="box box--panel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, possimus vero dolores consequatur nihil sapiente nesciunt sint odit, facere excepturi, quis enim porro. Perspiciatis, harum.</p>
+<p>Numquam blanditiis deleniti molestiae esse cupiditate ducimus cumque qui mollitia consequatur optio minima, praesentium quaerat alias neque similique! Ex iusto doloribus a sit autem doloremque.</p>
+</div>
+
+```html
+<p>...</p>
+```
+
+###Inline copy elements
+
+Text and copy and also be changed with other inline copy elements such as ```<strong>```, ```<em>```, ```<small>``` or ```<time>```. All these tags can be used for different purposes and if used correctly will create a semantic document which not only improves readability but also accessibility.  All tags listed are styled in _elements.page.scss.
+
+######Example
+<div class="box box--panel">
+<p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+<p>The <b>b element</b> example</p>
+<p>The <cite>cite element</cite> example</p>
+<p>The <code>code element</code> example</p>
+<p>The data element example</p>
+<p>The <del>del element</del> example</p>
+<p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+<p>The <em>em element</em> example</p>
+<p>The <i>i element</i> example</p>
+<p>The <ins>ins element</ins> example</p>
+<p>The <kbd>kbd element</kbd> example</p>
+<p>The <mark>mark element</mark> example</p>
+<p>The <q>q element</q> example</p>
+<p>The <q>q element <q>inside</q> a q element</q> example</p>
+<p>The <s>s element</s> example</p>
+<p>The <samp>samp element</samp> example</p>
+<p>The <small>small element</small> example</p>
+<p>The <span>span element</span> example</p>
+<p>The <strong>strong element</strong> example</p>
+<p>The <sub>sub element</sub> example</p>
+<p>The <sup>sup element</sup> example</p>
+<p>The <time datetime="2005-05-15 19:00">time element</time> example</p>
+<p>The <u>u element</u> example</p>
+<p>The <var>var element</var> example</p>
+</div>
+
+```html
+<abbr>...</abbr>
+<b>...</b>
+<cite>...</cite>
+<code>...</code>
+<data>...</data>
+<del>...</del>
+<dfn>...</dfn>
+<dfn title="...">...</dfn></p>
+<em>...</em>
+<i>...</i>
+<ins>...</ins>
+<kbd>...</kbd>
+<mark>...</mark>
+<q>...</q>
+<s>...</s>
+<samp>...</samp>
+<small>...</small>
+<strong>...</strong>
+<sub>...</sub>
+<sup>...</sup>
+<time datetime="...">...</time>
+<u>...</u>
+<var>...</var>
+```
+
+---
+
+##Alignment classes
+
+Align your text left, right, centre, justified or inherit from a parent with alignment utility classes. 
+
+######Example
+<div class="box box--panel">
+<p class="u-align-left">
+Left aligned text
+</p>
+<p class="u-align-center">
+Center aligned text
+</p>
+<p class="u-align-right">
+Right aligned text
+</p>
+</div>
+
+```HTML
+<p class="u-align-left">...</p>
+<p class="u-align-center">...</p>
+<p class="u-align-right">...</p>
+```

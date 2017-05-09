@@ -14,12 +14,14 @@
   }
 
   code {
+    @include font-size(14px);
     background-color: $color-grey-lighter;
     border-radius: $global-border-radius;
     padding: $global-spacing-unit-xs;
   }
 
   mark {
+    @include font-size(14px);
     background-color: $color-yellow-light;
     border-radius: $global-border-radius;
     padding: $global-spacing-unit-xs;

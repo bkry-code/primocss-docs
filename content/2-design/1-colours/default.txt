@@ -3,3 +3,127 @@ Title: Colours
 ----
 
 Text: 
+
+PrimoCSS Framework default colour variables. All variables can be found in _settings.color.scss and to override any variables change them in _variables.scss found in the root of the ```SCSS``` folder.  All colours here should set the visual tone of the framework.
+
+##Base colours
+
+All base colours are the starting point in PrimoCSS, used for either backgrounds, text or to remove a colour.
+
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #000; color: #FFF;">
+<p>Black<br><small>$color-black | #000000</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #FFF; color: #111;border:1px solid #EEE;">
+<p>White<br><small>$color-white | #FFFFFF</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: transparent; color:border:1px solid #EEE;">
+<p>Transparent<br><small>$color-transparent</small></p>
+</div>
+</div>
+
+---
+
+##Grey colours
+
+There is a six colour scale for grey's in PrimoCSS. They can be used for text, backgrounds or borders.
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #F7F7F7; color: #111;">
+<p>Grey lightest<br><small>$color-grey-lightest | #F7F7F7</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #EEEEEE; color: #111;">
+<p>Grey lighter<br><small>$color-grey-lighter | #EEEEEE</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #CBCBCB; color: #111;">
+<p>Grey light<br><small>$color-grey-light | #CBCBCB</small></p>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #888888; color: #111;">
+<p>Grey<br><small>$color-grey | #888888</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #666666; color: #FFF;">
+<p>Grey dark<br><small>$color-grey-dark | #666666</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #333333; color: #FFF;">
+<p>Grey darker<br><small>$color-grey-darker | #333333</small></p>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #111111; color: #FFF;">
+<p>Grey darkest<br><small>$color-grey-darkest | #111111</small></p>
+</div>
+</div>
+
+---
+
+##Primary colours
+
+All primary colours can be used for any site or UI requirement. They can be used for action buttons, focus states, notification messages / alerts and form elements. Also they can reflect a site brand. All colours have a lighter and darker shade.
+
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #e83a46; color: #FFF;">
+<p>Red<br><small>$color-red | #E83A46</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #ed6871; color: #FFF;">
+<p>Red light<br><small>$color-red-light | #ED6871</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #a8141e; color: #FFF;">
+<p>Red dark<br><small>$color-red-dark | #A8141E</small></p>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #f6511d; color: #FFF;">
+<p>Orange<br><small>$color-orange | #E83A46</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #f8774e; color: #FFF;">
+<p>Orange light<br><small>$color-orange-light | #F8774E</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #a62d07; color: #FFF;">
+<p>Orange dark<br><small>$color-orange-dark | #A62D07</small></p>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #FFB400; color: #111;">
+<p>Yellow<br><small>$color-yellow | #FFB400</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #FFC333; color: #111;">
+<p>Yellow light<br><small>$color-yellow-light | #FFC333</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #996c00; color: #FFF;">
+<p>Yellow dark<br><small>$color-yellow-dark | #996C00</small></p>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #00A6ED; color: #FFF;">
+<p>Blue<br><small>$color-blue | #00A6ED</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #21BCFF; color: #111;">
+<p>Blue light<br><small>$color-blue-light | #21BCFF</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #005F87; color: #FFF;">
+<p>Blue dark<br><small>$color-blue-dark | #005F87</small></p>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #7FB800; color: #FFF;">
+<p>Green<br><small>$color-green | #7FB800</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #A2EB00; color: #111;">
+<p>Green light<br><small>$color-green-light | #A2EB00</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #395200; color: #FFF;">
+<p>Green dark<br><small>$color-green-dark | #395200</small></p>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #0D2C54; color: #FFF;">
+<p>Navy<br><small>$color-navy | #0D2C54</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #144380; color: #FFF;">
+<p>Navy light<br><small>$color-navy-light | #144380</small></p>
+</div>
+<div class="grid-col-12 grid-md-col-4 box" style="background-color: #030912; color: #FFF;">
+<p>Navy dark<br><small>$color-navy-dark | #030912</small></p>
+</div>
+</div>
