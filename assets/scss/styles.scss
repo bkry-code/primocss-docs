@@ -163,16 +163,6 @@ hr {
     @include set-breakpoint-min(lg) {
       padding: $global-spacing-unit-xl;
     }
-
-    img {
-      height: 50px;
-      margin: 0 auto;
-
-      @include set-breakpoint-min(lg) {
-        height: auto;
-        margin: 0;
-      }
-    }
   }
 
   &__nav {
