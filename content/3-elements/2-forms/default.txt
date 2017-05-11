@@ -3,3 +3,262 @@ Title: Forms
 ----
 
 Text: 
+
+## Basic form setup
+
+All form controls will receive a basic set of styling which can be found in [_elements.forms.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.foms.scss).  All elements such as ```<input>```, ```<select>``` and ```<textarea>``` have no widths and can be set via pattern or to use a utility class such as ```.u-width-full```. 
+
+To style an input or similar form control the mixin ```input-pattern``` can be used with the set default settings. Overrides can be made for ```font-size```, ```color```, ```border-color```, ```border-radius```, ```:-placeholder```, ```:hover``` and ```:focus```.
+
+```<label>``` elements  have a set clearfix and define a small margin spacing between itself and the form control.
+
+###### Example
+
+<div class="box box--panel">
+<form>
+<label for="email">Email address</label>
+<input type="email" id="email" placeholder="Email">
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Password">
+<div>
+<label>
+<input type="checkbox"> Remember me
+</label>
+</div>
+<button type="submit">Submit</button>
+</form>
+</div>
+
+```html
+<form>
+    <label for="email">Email address</label>
+    <input type="email" id="email" placeholder="Email">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Password">
+    <div>
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+```
+---
+
+## Form controls
+
+Examples of standard form controls styled by PrimoCSS.
+
+### Inputs
+
+PrimoCSS supports all types of HTML5 inputs; ```text```, ```password```, ```datetime```, ```datetime-local```, ```date```, ```month```, ```time```, ```week```, ```email```, ```color```, ```number```, ```search```, ```url```, ```tel``` and ```datalist```. Amend the control by changing the ```type``` attribute.
+
+###### Example
+
+<div class="box box--panel">
+<form>
+<input type="text" placeholder="Text input">
+</form>
+</div>
+
+```html
+<input type="text" placeholder="Text input">
+```
+
+####Readonly input
+
+Set the ```readonly``` attribute to allow users to tab, focus or highlight text but not interact with the content.
+
+######Example
+<div class="box box--panel">
+<form>
+<input type="text" placeholder="Readonly text input" value="Read only..." readonly>
+</form>
+</div>
+
+```html
+<input type="text" placeholder="Readonly text input" readonly>
+```
+
+#### Disabled input
+
+To disable and remove functionality of a ```<input>``` add the ``` disabled``` attribute.
+
+###### Example
+<div class="box box--panel">
+<form>
+<input type="text" placeholder="Disabled text input" disabled>
+</form>
+</div>
+
+#### Invalid input with message
+
+PrimoCSS can show form validation using ```aria``` attributes. Adding ```aria-invalid="true"``` will present the form control in an error state. If a message is required attach ```aria-describedby``` with the ID of the error message.
+
+######Example
+<div class="box box--panel">
+<form>
+<input type="text" placeholder="Invalid text input" aria-invalid="true" aria-describedby="input-error-message">
+<p id="input-error-message" role="alert">Invalid message</p>
+</form>
+</div>
+
+```html
+<input type="text" placeholder="Invalid text input" aria-invalid="true" aria-describedby="input-error-message">
+<p id="input-error-message" role="alert">Invalid message</p>
+```
+
+---
+
+### Textarea
+
+Control to be used when a user needs to enter in multiple lines of text. Change the amount of defaults rows with the ```rows``` attribute. 
+
+######Example
+<div class="box box--panel">
+<form>
+<textarea rows="6">Textarea example...</textarea>
+</form>
+</div>
+
+```html
+<textarea rows="6">...</textarea>
+```
+
+####Readonly textarea
+
+Set the ```readonly``` attribute to allow users to tab, focus or highlight text but not interact with the content.
+
+######Example
+<div class="box box--panel">
+<form>
+<textarea rows="6" readonly>Readonly textarea...</textarea>
+</form>
+</div>
+
+```html
+<textarea rows="6" readonly>...</textarea>
+```
+
+####Disabled textarea
+
+To disable and remove functionality of a ```<textarea>``` add the ``` disabled``` attribute.
+
+######Example
+<div class="box box--panel">
+<form>
+<textarea rows="6" disabled>Readonly textarea...</textarea>
+</form>
+</div>
+
+```html
+<textarea rows="6" disabled>...</textarea>
+```
+
+---
+
+### Checkbox and radio buttons
+
+Use checkboxes and radio buttons to select one or more options.
+
+######Example
+<div class="box box--panel">
+<form>
+<label for="checkbox-1">
+<input type="checkbox" id="checkbox-1"> Checkbox
+</label>
+<label for="checkbox-2">
+<input type="checkbox" id="checkbox-2" disabled> Disabled checkbox
+</label>
+</form>
+<form>
+<label>
+<input type="radio" name="radio" id="radio1" value="radio1" checked>
+Radio option 1
+</label>
+<label>
+<input type="radio" name="radio" id="radio2" value="radio2">
+Radio option 2
+</label>
+<label>
+<input type="radio" name="radio" id="radio3" value="radio3" disabled>
+Disabled radio option
+</label>
+</form>
+</div>
+
+```html
+<label for="checkbox">
+    <input type="checkbox" id="checkbox"> Checkbox
+</label>
+
+<label for="radio"
+    <input type="radio" name="radio" id="radio" value="radio" checked> Radio option
+</label>
+```
+
+---
+
+### Selects
+
+Selects follow the same styling as per all ```<input>``` elements. PrimoCSS doesn't try to style or take over the dropdown style with new CSS or javascript. The ```<select>``` element has a custom dropdown SVG icon which can be amended in [_elements.forms.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.forms.scss).
+
+######Example
+
+<div class="box box--panel">
+<form>
+<select style="width: 200px;">
+<option selected disabled>Select value...</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+<select style="width: 200px;" disabled>
+<option selected disabled>Disabled select...</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+</form>
+</div>
+
+```html
+<select>
+    <option selected disabled>Select value...</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+```
+
+Add the ```multiple``` attribute to show multiple options and ```size``` for a ```<select>``` element with a set amount of visible options.
+
+######Example
+
+<div class="box box--panel">
+<form>
+<select style="width: 200px;" multiple>
+<option disabled>Select value...</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+</select>
+</form>
+</div>
+
+```html
+<select multiple>
+    <option disabled>Select value...</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+```
+
+---
+
+## Related content
+
+- (link: elements/buttons text: Elements - Buttons)

@@ -3,3 +3,43 @@ Title: Buttons
 ----
 
 Text: 
+
+## Button tags
+
+In PrimoCSS only the ```<button>``` HTML element is styled as well as certain ```<input>``` types. Button styles can be created using the ```button-pattern``` mixin, adding and styling for ```color```, ```font-size```,  ```border-color```, ```background-color``` and ```border-radius```.  All button styles are set in [_elements.forms.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.foms.scss).
+
+######Example
+
+<div class="box box--panel">
+<button>Button element</button>
+<input type="button" value="Input type button">
+<input type="submit" value="Input type submit">
+<input type="reset" value="Input type reset">
+</div>
+
+```html
+<button>...</button>
+<input type="button" value="...">
+<input type="submit" value="...">
+<input type="reset" value="...">
+```
+
+### Disabled state
+
+To disable and remove functionality of a ```<button>``` add the ```disabled``` attribute.
+
+######Example
+
+<div class="box box--panel">
+<button disabled>Disabled button element</button>
+</div>
+
+```html
+<button disabled>...</button>
+```
+
+---
+
+## Related content
+
+- [Elements - forms](forms)

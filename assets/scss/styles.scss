@@ -1,12 +1,4 @@
 //
-// Variable overrides
-//
-
-$global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-
-
-
-//
 // Import PrimoCSS framework
 //
 
@@ -16,7 +8,7 @@ $global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv
 * {
 
   + hr {
-    margin-top: $global-spacing-unit-lg;
+    margin-top: $global-spacing-unit-xl;
   }
 }
 
@@ -68,10 +60,6 @@ hr {
     color: $color-grey-lighter;
     style: solid;
     width: 1px;
-  }
-
-  margin: {
-    top: $global-spacing-unit-xl;
   }
 
   + * {

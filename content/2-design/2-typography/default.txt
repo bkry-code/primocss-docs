@@ -6,15 +6,15 @@ Text:
 
 ##Typeface
 
-Currently PrimoCSS uses the system font from your OS and fall back to ```sans-serif```. To apply or change what global font you require, it can be found in _settings.defaults.scss under the ```$global-font-family``` variable. This is globally used under the ```html``` element where the default, font-size, font-weight, line-height and color for the whole framework are set.
+Currently PrimoCSS uses the system font from your OS and fall back to ```sans-serif```. To apply or change what global font you require, it can be found in [_settings.defaults.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.defaults.scss) under the ```$global-font-family``` variable. This is globally used under the ```<html>``` element where the default ```font-size```, ```font-weight```, ```line-height``` and ```color``` for the whole framework are set.
 
-```bash
+```scss
 $global-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !default;
 ```
 
 ###Weights
 
-We have a full set of weights that can be used and changed. The base font-weight is set to 400 via the ```$global-font-weight``` variables. Here is a list of other variables that can be used for strong, light or heading font elements;
+We have a full set of weights that can be used and changed. The base ```font-weight``` is set to ```400``` via the ```$global-font-weight``` variables. Here is a list of other variables that can be used heading elements and other inline copy elements.
 
 ```scss
 $font-weight-lt:              300 !default;
@@ -28,7 +28,7 @@ $font-weight-xb:              800 !default;
 
 ##Headings
 
-All HTML headings are styled between ```<h1>``` to ```<h6>```, each element uses the ```font-heading``` mixin which sets the size, weight and responsive sizes if ```$global-responsive``` is set to true. Heading styles can be found in _elements.headings.scss.
+All HTML headings are styled between ```<h1>``` to ```<h6>```, each element uses the ```font-heading``` mixin which sets the size, weight and responsive sizes if ```$global-responsive``` is set to true. Heading styles can be found in [_elements.headings.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.headings.scss).
 
 ######Example
 <div class="box box--panel">
@@ -53,7 +53,7 @@ All HTML headings are styled between ```<h1>``` to ```<h6>```, each element uses
 
 ##Body copy
 
-The global default ```font-size``` is **16px** and set by ```$global-font-size```. This is controlled by ```html``` and filters through all other elements and text. Paragraph elements have a set ```margin-top``` if next to each other and keeps a set vertical scale in PrimoCSS.
+The global default ```font-size``` is **16px** and set by ```$global-font-size```. This is controlled by ```<html>``` and filters through all other elements and text. Paragraph elements have a set ```margin-top``` if next to each other and keeps a set vertical scale in PrimoCSS.
 
 ######Example
 <div class="box box--panel">
@@ -67,7 +67,7 @@ The global default ```font-size``` is **16px** and set by ```$global-font-size``
 
 ###Inline copy elements
 
-Text and copy and also be changed with other inline copy elements such as ```<strong>```, ```<em>```, ```<small>``` or ```<time>```. All these tags can be used for different purposes and if used correctly will create a semantic document which not only improves readability but also accessibility.  All tags listed are styled in _elements.page.scss.
+Text and copy and also be changed with other inline copy elements such as ```<strong>```, ```<em>```, ```<small>``` or ```<time>```. All these tags can be used for different purposes and if used correctly will create a semantic document which not only improves readability but also accessibility.  All tags listed are styled in [_elements.page.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.page.scss).
 
 ######Example
 <div class="box box--panel">

@@ -4,7 +4,7 @@ Title: Colours
 
 Text: 
 
-PrimoCSS Framework default colour variables. All variables can be found in _settings.color.scss and to override any variables change them in _variables.scss found in the root of the ```SCSS``` folder.  All colours here should set the visual tone of the framework.
+PrimoCSS Framework default colour variables. All variables can be found in [_settings.color.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.color.scss) and to override any variables change them in [_settings.variables.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.variables.scss) found in the root of the SCSS folder.  All colours here should set the visual tone of the framework.
 
 ##Base colours
 

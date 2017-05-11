@@ -8,7 +8,7 @@
 
     <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
 
-    <?= css('assets/css/styles.min.css') ?>
+    <?= css('assets/css/styles.css') ?>
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="<?= $site->title()->html() ?>">

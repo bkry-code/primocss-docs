@@ -3,3 +3,15 @@ Title: Links
 ----
 
 Text: 
+
+PrimoCSS sets all link styles to inherit colours from its parent unless set. Links can be styled using the ```link-style``` mixin and any global changes can be found at [_elements.link.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.links.scss). All links are distinguished by ```text-dectoration: underline``` and uses ```$color-blue-light``` as the ```:hover``` style.
+
+######Example
+
+<div class="box box--panel">
+<a href="#">Example anchor link</a>
+</div>
+
+```html
+<a href="#">...</a>
+```

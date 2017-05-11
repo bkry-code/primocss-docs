@@ -3,3 +3,79 @@ Title: Lists
 ----
 
 Text: 
+
+##Ordered list
+
+Use an ordered list ```<ol>``` when the order of the items are important or when the list order is relevant.
+
+###### Example
+
+<div class="box box--panel">
+<ol>
+<li>Ordered list item 1</li>
+<li>Ordered list item 2</li>
+<ol>
+<li>Ordered list item 1</li>
+<li>Ordered list item 2</li>
+</ol>
+</li>
+<li>Ordered list item 3</li>
+</ol>
+</div>
+
+```html
+<ol>
+    <li>...</li>
+</ol>
+```
+
+---
+
+## Unordered list
+
+Use an unordered list ```<ul>``` when the order of the items aren't important or when the list order is irrelevant.
+
+###### Example
+
+<div class="box box--panel">
+<ul>
+<li>Unordered list item 1</li>
+<li>Unordered list item 2</li>
+<ul>
+<li>Unordered list item 1</li>
+<li>Unordered list item 2</li>
+</ul>
+</li>
+<li>Unordered list item 3</li>
+</ul>
+</div>
+
+```html
+<ul>
+    <li>...</li>
+</ul>
+```
+
+---
+
+## Description list
+
+Use a description list ```<dl>``` to list a group of one or more terms and descriptions.
+
+###### Example
+
+<div class="box box--panel">
+<dl>
+<dt>Definition term 1</dt>
+<dd>Definition description 1</dd>
+<dt>Definition term 2</dt>
+<dd>Definition description 2</dd>
+</dl>
+</div>
+
+```html
+<dl>
+    <dt>...</dt>
+    <dd>...</dd>
+</dl>
+```

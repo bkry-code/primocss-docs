@@ -93,7 +93,8 @@ fieldset {
     padding: 8px 16px; }
 
 label {
-  cursor: pointer; }
+  cursor: pointer;
+  display: inherit; }
   label::after {
     content: "";
     display: block;
@@ -127,6 +128,7 @@ input[type='text'], input[type='password'], input[type='color'], input[type='dat
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
+  display: inherit;
   font-family: inherit;
   max-width: 100%;
   outline: none;
@@ -216,6 +218,41 @@ input[type='button'], input[type='reset'], input[type='submit'] {
     input[type='button']:disabled:active, input[type='button']:disabled:focus, input[type='button']:disabled:hover, input[type='reset']:disabled:active, input[type='reset']:disabled:focus, input[type='reset']:disabled:hover, input[type='submit']:disabled:active, input[type='submit']:disabled:focus, input[type='submit']:disabled:hover {
       background-color: #00a6ed;
       border-color: #00a6ed; }
+  input[type='button'] + button,
+  input[type='button'] + [type='button'],
+  input[type='button'] + [type='reset'],
+  input[type='button'] + [type='submit'], input[type='reset'] + button,
+  input[type='reset'] + [type='button'],
+  input[type='reset'] + [type='reset'],
+  input[type='reset'] + [type='submit'], input[type='submit'] + button,
+  input[type='submit'] + [type='button'],
+  input[type='submit'] + [type='reset'],
+  input[type='submit'] + [type='submit'] {
+    margin-top: 0; }
+    @media screen and (max-width: 420px) {
+      input[type='button'] + button,
+      input[type='button'] + [type='button'],
+      input[type='button'] + [type='reset'],
+      input[type='button'] + [type='submit'], input[type='reset'] + button,
+      input[type='reset'] + [type='button'],
+      input[type='reset'] + [type='reset'],
+      input[type='reset'] + [type='submit'], input[type='submit'] + button,
+      input[type='submit'] + [type='button'],
+      input[type='submit'] + [type='reset'],
+      input[type='submit'] + [type='submit'] {
+        margin-top: 4px; } }
+    @media screen and (max-width: 768px) {
+      input[type='button'] + button,
+      input[type='button'] + [type='button'],
+      input[type='button'] + [type='reset'],
+      input[type='button'] + [type='submit'], input[type='reset'] + button,
+      input[type='reset'] + [type='button'],
+      input[type='reset'] + [type='reset'],
+      input[type='reset'] + [type='submit'], input[type='submit'] + button,
+      input[type='submit'] + [type='button'],
+      input[type='submit'] + [type='reset'],
+      input[type='submit'] + [type='submit'] {
+        margin-top: 8px; } }
 
 textarea {
   font-size: 16px;
@@ -227,6 +264,7 @@ textarea {
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
+  display: inherit;
   font-family: inherit;
   max-width: 100%;
   outline: none;
@@ -288,6 +326,7 @@ select {
   border-radius: 4px;
   border-style: solid;
   border-width: 1px;
+  display: inherit;
   font-family: inherit;
   max-width: 100%;
   outline: none;
@@ -381,6 +420,23 @@ button {
     button:disabled:active, button:disabled:focus, button:disabled:hover {
       background-color: #00a6ed;
       border-color: #00a6ed; }
+  button + button,
+  button + [type='button'],
+  button + [type='reset'],
+  button + [type='submit'] {
+    margin-top: 0; }
+    @media screen and (max-width: 420px) {
+      button + button,
+      button + [type='button'],
+      button + [type='reset'],
+      button + [type='submit'] {
+        margin-top: 4px; } }
+    @media screen and (max-width: 768px) {
+      button + button,
+      button + [type='button'],
+      button + [type='reset'],
+      button + [type='submit'] {
+        margin-top: 8px; } }
 
 h1 {
   font-size: 36px;
@@ -1876,7 +1932,7 @@ option {
   max-width: 100%; }
 
 * + hr {
-  margin-top: 32px; }
+  margin-top: 64px; }
 
 h1,
 h2,
@@ -1907,8 +1963,7 @@ a:focus {
 hr {
   border-color: #eee;
   border-style: solid;
-  border-width: 1px;
-  margin-top: 64px; }
+  border-width: 1px; }
   hr + * {
     margin-top: 32px; }
 
@@ -1961,13 +2016,6 @@ hr {
   @media screen and (min-width: 1024px) {
     .sidebar__logo {
       padding: 64px; } }
-  .sidebar__logo img {
-    height: 50px;
-    margin: 0 auto; }
-    @media screen and (min-width: 1024px) {
-      .sidebar__logo img {
-        height: auto;
-        margin: 0; } }
 
 .sidebar__nav {
   margin: 0; }
