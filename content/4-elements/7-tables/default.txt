@@ -1,0 +1,51 @@
+Title: Tables
+
+----
+
+Text: 
+
+## Basic table
+
+PrimoCSS applies basic styling to the ```<table>``` adding padding to all ```<td>``` elements and borders to rows ```<tr>```. ```<th>``` elements are given a bolder ```font-weight```. All content is aligned to the left and can be overwritten by using the alignment utility classes e.g ```.u-align-right```. All styles for tables can be found in [_elements.tables.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.table.scss)
+
+######Example
+
+<div class="box box--panel">
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Savings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>January</td>
+<td>£100</td>
+</tr>
+<tr>
+<td>February</td>
+<td>£230</td>
+</tr>
+<tr>
+<td>March</td>
+<td>£87</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+```html
+<table>
+    <thead>
+        <tr>
+            <th>...</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>...</td>
+        </tr>
+    </tbody>
+</table>
+```

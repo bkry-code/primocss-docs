@@ -4,7 +4,7 @@ Title: Forms
 
 Text: 
 
-## Basic form setup
+## Basic form
 
 All form controls will receive a basic set of styling which can be found in [_elements.forms.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.foms.scss).  All elements such as ```<input>```, ```<select>``` and ```<textarea>``` have no widths and can be set via pattern or to use a utility class such as ```.u-width-full```. 
 

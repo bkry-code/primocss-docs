@@ -222,10 +222,19 @@
       display: none;
     }
 
+    &:hover {
+      background-image: url('data:image/svg+xml;utf8,%3Csvg width="10" height="3" viewBox="0 0 10 3" xmlns="http://www.w3.org/2000/svg"%3E%3Ctitle%3E⌄%3C/title%3E%3Cpath fill="%23000000" d="M9.234 0L4.617 3 0 0h1.788l2.83 1.814L7.445 0" fill-rule="evenodd"/%3E%3C/svg%3E');
+      cursor: pointer;
+    }
+
     &[multiple],
     &[size] {
       background-image: none;
       height: auto;
+
+      &:hover {
+        background-image: none;
+      }
     }
   }
 

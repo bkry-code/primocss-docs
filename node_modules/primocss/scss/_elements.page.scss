@@ -17,14 +17,22 @@
     @include font-size(14px);
     background-color: $color-grey-lighter;
     border-radius: $global-border-radius;
-    padding: $global-spacing-unit-xs;
+    padding: $global-spacing-unit-xs - 2;
   }
 
   mark {
     @include font-size(14px);
     background-color: $color-yellow-light;
     border-radius: $global-border-radius;
-    padding: $global-spacing-unit-xs;
+    padding: $global-spacing-unit-xs - 2;
+  }
+
+  kbd {
+    @include font-size(14px);
+    background-color: $color-grey-darkest;
+    border-radius: $global-border-radius;
+    color: $color-white;
+    padding: $global-spacing-unit-xs - 2;
   }
 
   //

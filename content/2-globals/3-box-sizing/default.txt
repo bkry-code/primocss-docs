@@ -1,0 +1,35 @@
+Title: Box sizing
+
+----
+
+Text: 
+
+PrimoCSS sets simple sizing for the framework, creating a global ```boz-sizing``` by globally setting the value as ```border-box```. This will make sure any new patterns or styles aren't effected by ```padding```.  This is set on the ```<html>``` element and any psudeo elements such as ```:before``` and ```:after``` will inherit it's parent styles.
+
+To globally turn off the box sizing, set ```$global-border-box``` to ```false``` in any overwrite file. Styles can be found in [_global.box-sizing.scss](https://github.com/primocss/primocss/blob/master/scss/_global.box-sizing.scss) and [_settings.default.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.defaults.scss).
+
+######Example
+
+```scss
+@if $global-border-box == true {
+  // GENERIC - Box sizing
+
+  //
+  //  All elements set as 'border-box'. Overwrite this on a
+  //  class by class or element basis.
+  //
+
+  html {
+    box-sizing: border-box;
+  }
+
+  * {
+    box-sizing: inherit;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+    }
+  }
+}
+```

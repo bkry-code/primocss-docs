@@ -1,0 +1,49 @@
+Title: Base
+
+----
+
+Text: 
+
+##HTML tag
+
+With PrimoCSS the ```<html>``` element holds a key amount of global styles. These filter further down into the framework including the default ```font-family```, ```font-size```, ```font-weight```, ```line-height``` and ```color``` and are set with the default global variables in [_settings.defaults.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.defaults.scss).
+
+######Example SCSS
+
+```scss
+html {
+  @include font-size($global-font-size);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: $global-background-color;
+  color: $global-color;
+
+  font: {
+    family: $global-font-family;
+    weight: $global-font-weight;
+  }
+
+  height: 100%;
+  line-height: $global-line-height / $global-font-size;
+  min-height: 100%;
+  overflow: {
+    x: hidden;
+    y: scroll;
+  }
+
+
+  //
+  // Sets font-size for set breakpoints if $global-responsive is set to true
+  //
+
+  @if $global-responsive == true {
+    @include set-breakpoint-max(md) {
+      @include font-size($global-font-size - 1);
+    }
+
+    @include set-breakpoint-max(sm) {
+      @include font-size($global-font-size - 2);
+    }
+  } // endif
+}
+```

@@ -1,0 +1,283 @@
+Title: Grid
+
+----
+
+Text: 
+
+## Basic grid
+
+PrimoCSS includes a responsive mobile fluid flex-box grid that scales up to 12 columns or can be changed via the SCSS variable ```$grid-max-columns```.  Use ```.grid-row``` to create horizontal groups of columns and all content should be placed within columns. 
+
+The predefined classes give any project the flexibility to create any layout required as well as screen specific classes. Setting ```.grid-md-col-6``` will set the width for ```min-width``` of medium screens. Grid styles can be found in [_layout.grid.scss](https://github.com/primocss/primocss/blob/master/scss/_layout.grid.scss).
+
+######Example
+
+<div class="box box--panel">
+<div class="grid-row">
+<div class="grid-col-12">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-sm-col-2 grid-md-col-1">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+<div class="grid-col-12 grid-sm-col-10 grid-md-col-11">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-sm-col-4 grid-md-col-2">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+<div class="grid-col-12 grid-sm-col-8 grid-md-col-10">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-sm-col-6 grid-md-col-3">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+<div class="grid-col-12 grid-sm-col-6 grid-md-col-9">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-sm-col-5 grid-md-col-4">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+<div class="grid-col-12 grid-sm-col-7 grid-md-col-8">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-sm-col-4 grid-md-col-5">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+<div class="grid-col-12 grid-sm-col-8 grid-md-col-7">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-12 grid-sm-col-8 grid-md-col-6">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+<div class="grid-col-12 grid-sm-col-4 grid-md-col-6">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+</div>
+
+```html
+<div class="grid-row">
+    <div class="grid-md-col-6">...</div>
+    <div class="grid-md-col-6">...</div>
+</div>
+```
+
+In-conjunction with the ```.grid-row``` adding various modifies such as ```.grid-row--middle``` modifier will vertically centre any content. Other modifier classes are ```.grid-row--start```, ```.grid-row--center```, ```.grid-row--end```, ```.grid-row--top```, ```.grid-row--top```, ```.grid-row--bottom```. These all use either ```justify-content``` or ```align-items``` in conjunction with ```flex```. Styles can be found in [_tools.flex-modifiers](https://github.com/primocss/primocss/blob/master/scss/_tools.flex-modifiers.scss).
+
+```html
+<div class="grid-row grid-row--start">...</div>
+<div class="grid-row grid-row--center">...</div>
+<div class="grid-row grid-row--end">...</div>
+<div class="grid-row grid-row--top">...</div>
+<div class="grid-row grid-row--middle">...</div>
+<div class="grid-row grid-row--bottom">...</div>
+```
+
+---
+
+##Offset classes
+
+Creates an offset left margin to mimic column space between itself and another grid element.
+
+######Example
+
+<div class="box box--panel">
+<div class="grid-row">
+<div class="grid-col-11 offset-col-1">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-10 offset-col-2">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-9 offset-col-3">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-8 offset-col-4">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-7 offset-col-5">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-6 offset-col-6">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-5 offset-col-7">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-4 offset-col-8">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-3 offset-col-9">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-2 offset-col-10">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+<div class="grid-row">
+<div class="grid-col-1 offset-col-11">
+<div class="box" style="background-color: #EEE;"></div>
+</div>
+</div>
+</div>
+
+```html
+<div class="grid-row">
+    <div class="grid-col-5 offset-col-7">
+    ...
+    </div>
+</div>
+```
+
+---
+
+##Nesting grids
+
+Grid has the ability to nest grids with inside any column. Repeat a ```.grid-row``` and a new 12 column grid can be made.
+
+<div class="box box--panel">
+<div class="grid-row">
+<div class="grid-col-12">
+<div class="box box--panel" style="background-color: #EEE;">
+<div class="grid-row">
+<div class="grid-col-12">
+<div class="box box--panel" style="background-color: #EFEFEF;">
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-4">
+<div class="box box--panel" style="background-color: #F1F1F1;">
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-6">
+<div class="box box--panel" style="background-color: #F3f3f3;"></div>
+</div>
+<div class="grid-col-12 grid-md-col-6">
+<div class="box box--panel" style="background-color: #F3F3F3;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid-col-12 grid-md-col-4">
+<div class="box box--panel" style="background-color: #F1F1F1;">
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-6">
+<div class="box box--panel" style="background-color: #F3F3F3;"></div>
+</div>
+<div class="grid-col-12 grid-md-col-6">
+<div class="box box--panel" style="background-color: #F3F3F3;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid-col-12 grid-md-col-4">
+<div class="box box--panel" style="background-color: #F1F1F1;">
+<div class="grid-row">
+<div class="grid-col-12 grid-md-col-6">
+<div class="box box--panel" style="background-color: #F3F3F3;"></div>
+</div>
+<div class="grid-col-12 grid-md-col-6">
+<div class="box box--panel" style="background-color: #F3F3F3;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+```html
+<div class="grid-row">
+    <div class="grid-col-12">
+        <div class="grid-row">
+            <div class="grid-col-6">
+                ...
+            </div>
+            <div class="grid-col-6">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
+```
+
+---
+
+##No gutters
+
+Applying the class ```.grid-row--no-gutter``` and ```.grid-col-12--no-gutter``` will remove margins from the row and all columns.
+
+######Example
+
+<div class="box box--panel">
+<div class="grid-row">
+<div class="grid-col-12">
+<div class="grid-row grid-row--no-gutter">
+<div class="grid-col-12--no-gutter grid-md-col-4--no-gutter">
+<div class="box box--panel" style="background-color: #EEE;">
+<div class="box box--panel" style="background-color: #EFEFEF;"></div>
+</div>
+</div>
+<div class="grid-col-12--no-gutter grid-md-col-4--no-gutter">
+<div class="box box--panel" style="background-color: #EEE;">
+<div class="box box--panel" style="background-color: #EFEFEF;"></div>
+</div>
+</div>
+<div class="grid-col-12--no-gutter grid-md-col-4--no-gutter">
+<div class="box box--panel" style="background-color: #EEE;">
+<div class="box box--panel" style="background-color: #EFEFEF;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+```html
+<div class="grid-row grid-row--no-gutter">
+    <div class="grid-col-12--no-gutter">
+        ...
+    </div>
+</div>
+```
+
+---
+
+##Related content
+
+- (link: layout/containers text: Layout - containers)
+- (link: layout/spacing text: Layout - spacing)
+- Flex grid based on the work by (link: https://twitter.com/heydonworks text: Heydon Pickering) - [fukol-grids](https://github.com/Heydon/fukol-grids).

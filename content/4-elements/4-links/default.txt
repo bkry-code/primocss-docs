@@ -4,6 +4,8 @@ Title: Links
 
 Text: 
 
+## Hyperlink / anchor tag
+
 PrimoCSS sets all link styles to inherit colours from its parent unless set. Links can be styled using the ```link-style``` mixin and any global changes can be found at [_elements.link.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.links.scss). All links are distinguished by ```text-dectoration: underline``` and uses ```$color-blue-light``` as the ```:hover``` style.
 
 ######Example
@@ -15,3 +17,9 @@ PrimoCSS sets all link styles to inherit colours from its parent unless set. Lin
 ```html
 <a href="#">...</a>
 ```
+
+---
+
+##Related content
+
+- (link: design/typography text: Design - typography)

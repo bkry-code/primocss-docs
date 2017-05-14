@@ -1,0 +1,57 @@
+Title: Code
+
+----
+
+Text: 
+
+## Inline code
+
+Within or on its own wrap inline code snippets with the ```<code>``` elements. This sets the ```font-family``` to use ```$global-mono-font-family: Consolas, monaco, monospace !default;```.
+
+###### Example
+
+<div class="box box--panel">
+<p>Example <code>code</code> inline element</p>
+</div>
+
+```html
+<code>...</code>
+```
+
+---
+
+## Keyboard input
+
+Use the ```<kbd>``` to defines keyboard input.
+
+###### Example
+
+<div class="box box--panel">
+<p>Example <kbd>kbd</kbd> inline element</p>
+</div>
+
+```html
+<kbd>...</kbd>
+```
+
+---
+
+## Preformatted text
+
+Use ```<pre>``` for multiple lines of code or preformatted text. 
+
+###### Example
+
+<div class="box box--panel">
+<pre>pre example text...</pre>
+</div>
+
+```html
+<pre>...</pre>
+```
+
+---
+
+##Related content
+
+- (link: design/typography text: Design - typography)

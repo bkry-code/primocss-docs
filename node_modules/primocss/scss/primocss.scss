@@ -1,7 +1,7 @@
 @import 'settings.colors';
 @import 'settings.defaults';
 
-// File is used to overide any default settings variable 
+// File is used to overide any default settings variable
 @import 'settings.variables';
 
 @import 'tools.clearfix';
@@ -19,9 +19,9 @@
 @import 'tools.truncate';
 
 
-@import 'generic.reset';
-@import 'generic.base';
-@import 'generic.box-sizing';
+@import 'global.reset';
+@import 'global.base';
+@import 'global.box-sizing';
 
 
 @import 'elements.forms';

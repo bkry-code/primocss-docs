@@ -44,6 +44,14 @@ p {
   }
 }
 
+kbd {
+    @include font-size(14px);
+    background-color: $color-grey-darkest;
+    border-radius: $global-border-radius;
+    color: $color-white;
+    padding: ($global-spacing-unit-xs - 1) $global-spacing-unit-xs;
+  }
+
 a {
 
   // Applies a blue outline for accessibility

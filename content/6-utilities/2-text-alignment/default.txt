@@ -1,0 +1,32 @@
+Title: Text alignment
+
+----
+
+Text: 
+
+Align your text left, right, centre, justified or inherit from a parent with alignment utility classes. Styles can be found in [_utility.text-align.scss](https://github.com/primocss/primocss/blob/master/scss/_utility.text-align.scss).
+
+######Example
+<div class="box box--panel">
+<p class="u-align-left">
+Left aligned text
+</p>
+<p class="u-align-center">
+Center aligned text
+</p>
+<p class="u-align-right">
+Right aligned text
+</p>
+</div>
+
+```HTML
+<p class="u-align-left">...</p>
+<p class="u-align-center">...</p>
+<p class="u-align-right">...</p>
+```
+
+---
+
+##Related content
+
+- (link: design/typography text: Design - typography)

@@ -1,0 +1,85 @@
+Title: Reset
+
+----
+
+Text: 
+
+##Reset styles
+To improve cross-browser compatibility and rendering, we created a simple reset to resolve and improve issues across browsers and devices. The rest of the framework creates more opinionated style of most HTML elements.
+
+You'll find all reset styles in [_globals.reset.scss](https://github.com/primocss/primocss/blob/master/scss/_globals.reset.scss).
+
+######Example
+
+```scss
+// GLOBALS - Reset
+
+//
+//  A simple reset that works
+//
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  padding: 0;
+}
+
+
+//
+//  Remove trailing margins from nested lists.
+//
+
+li > {
+
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+
+}
+
+
+//
+//  Remove default table spacing.
+//
+
+table {
+  border: {
+    collapse: collapse;
+    spacing: 0;
+  }
+}
+
+
+//
+// 1. Reset Chrome and Firefox behaviour which sets a `min-width: min-content;`
+//    on fieldsets.
+//
+
+fieldset {
+  border: 0;
+  min-width: 0; // [1] //
+}
+```
+
+---
+
+##Related content
+
+- [Globals - base](base)
+- [Globals - box sizing](box-sizing)

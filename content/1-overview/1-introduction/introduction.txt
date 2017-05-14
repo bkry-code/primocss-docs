@@ -50,12 +50,12 @@ Faq:
 </div>
 <div class="grid-col-12 grid-md-col-4">
 <h3>How can I use the framework for my work?</h3>
-<p>Just follow the <a href="#">setup guides</a>, there are various ways for anyone to kick-start their projects from hosting the <abbr title="cascading stylesheet">CSS</abbr> or include the <abbr title="syntactically awesome stylesheet">SASS</abbr> source and take advantage of all the tools available.</p>
+<p>Just follow the <a href="setup">setup guides</a>, there are various ways for anyone to kick-start their projects from hosting the <abbr title="cascading stylesheet">CSS</abbr> or include the <abbr title="syntactically awesome stylesheet">SASS</abbr> source and take advantage of all the tools available.</p>
 </div>
 <div class="grid-col-12 grid-md-col-4">
 <h3>Got any examples of it in use?</h3>
-<p>If you follow this link to the <a href="#">examples page</a> you'll find an array of pre-made example templates using the framework.</p>
-<p>Would you like to show case your work here? <a href="#">Send us a message</a> and we can spotlight your work on this site.</p>
+<p>If you follow this link to the <del><a href="#">examples page</a></del> you'll find an array of pre-made example templates using the framework.</p>
+<p>Would you like to show case your work here? <a href="mailto:richard@mccartney.io">Send us a message</a> and we can spotlight your work on this site.</p>
 </div>
 </div>
 </div>

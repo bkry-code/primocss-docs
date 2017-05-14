@@ -1,0 +1,24 @@
+Title: Float
+
+----
+
+Text: 
+
+The float utility is to be used to float and element left or right. Styles can be found in [_utility.float.scss](https://github.com/primocss/primocss/blob/master/scss/_utility.float.scss).
+
+######Example
+
+<div class="box box--panel" style="overflow:hidden;">
+<div class="box u-float-left" style="border:1px solid #EEE;margin:0;">
+<p>Float left</p>
+</div>
+<div class="box u-float-right" style="border:1px solid #EEE;margin:0;">
+<p>Float right</p>
+</div>
+</div>
+
+```html
+<div class="u-float-left">...</div>
+<div class="u-float-right">...</div>
+<div class="u-float-none">...</div>
+```

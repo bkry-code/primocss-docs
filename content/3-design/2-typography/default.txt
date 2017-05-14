@@ -125,6 +125,33 @@ Text and copy and also be changed with other inline copy elements such as ```<st
 
 ---
 
+##Blockquote and citations
+
+The ```<blockquote>``` tag specifies a section that is quoted from another source. Use ```<q>``` for inline (short) quotations. Blockquote styles can be found in [_elements.quotes.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.quotes.scss)
+
+######Example
+
+<div class="box box--panel">
+<blockquote>
+<p><strong>This is a blockquote.</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+</p>
+<footer>
+— <cite><a href="http://www.thegatesnotes.com">Bill Gates</a></cite>
+</footer>
+</blockquote>
+</div>
+
+```html
+<blockquote>
+   <p>...</p>
+   <footer>
+       <cite>...</cite>
+    </footer>
+</blockquote>
+```
+
+---
+
 ##Alignment classes
 
 Align your text left, right, centre, justified or inherit from a parent with alignment utility classes. 
@@ -147,3 +174,10 @@ Right aligned text
 <p class="u-align-center">...</p>
 <p class="u-align-right">...</p>
 ```
+
+---
+
+##Related content
+
+- (link: elements/code text: Elements - code)
+- (link: elements/link text: Elements - links)

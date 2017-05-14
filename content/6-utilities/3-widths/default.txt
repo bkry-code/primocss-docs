@@ -1,0 +1,26 @@
+Title: Widths
+
+----
+
+Text: 
+
+Set or overwrite widths using the ```.u-width-full``` or .u-max-width-full``` utility classes. Styles can be found in [_utility.widths.scss](https://github.com/primocss/primocss/blob/master/scss/_utility.widths.scss). 
+
+######Example
+
+<div class="box box--panel">
+<div class="box u-width-full" style="border:1px solid #EEE;">
+.u-width-full
+</div>
+</div>
+
+```scss
+<div class="u-width-full">..</div>
+<div class="u-max-width-full">..</div>
+```
+
+---
+
+##Related content
+
+- (link: elements/forms text: Elements - forms)

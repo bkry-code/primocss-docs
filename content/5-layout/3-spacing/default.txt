@@ -1,0 +1,44 @@
+Title: Spacing
+
+----
+
+Text: 
+
+##Vertical alignment
+
+Using the lobotomised owl selector, this allows you to control the flow of content. Each element which follows another will be applied with ```margin-top``` to define spacing equally. This system should anticipate spacing instead of setting specifics. In styles elements can be set as well to remove the ```margin``` as they do not require any margin at all, this should override the global vertical rhythm.
+
+In other areas of PrimoCSS the vertical rhythm has been set. Styles can be found in [_layout.spacing.scss](https://github.com/primocss/primocss/blob/master/scss/_layout.spacing.scss).
+
+######Example
+
+```scss
+* {
+    margin: 0;
+
+    + *,
+    + h1,
+    + fieldset  {
+      margin-top: $global-spacing-unit; 
+    }
+  }
+
+  body,
+  main,
+  br,
+  li,
+  dt,
+  dd,
+  th,
+  td,
+  option {
+    margin: 0;
+  }
+```
+
+---
+
+##Related content
+
+- (link: layout/grid text: Layout - grid)
+- (link: layout/containers text: Layout - containers)

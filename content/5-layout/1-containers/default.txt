@@ -1,0 +1,73 @@
+Title: Containers
+
+----
+
+Text: 
+
+##Container
+
+Containers are the basic level of layout elements for PrimoCSS. They're used to hold the grid layout and can be extended for other requirements. There are two types of containers created in PrimoCSS. The standard ```.container``` class is centred to the browser with a ```max-width``` of **1440px** set by ```$global-site-width```. Styles can be found in [_layout.containers.scss](https://github.com/primocss/primocss/blob/master/scss/_layout.containers.scss)
+
+```html
+<div class="container">...</div>
+```
+
+###Fluid container
+
+Using the modifier class ```.container--fluid``` for setting a full width container. This removes the set ```max-width``` so the container is ```100%```spanning the entire view width of your browser or device.
+
+```html
+<div class="container container--fluid">...</div>
+```
+
+###Middle container
+
+When applying ```.container--middle``` it kicks in flex and vertically aligns all content to the centre of the element.
+
+```html
+<div class="container container--middle">...</div>
+```
+
+---
+
+##Strip
+
+The ```.strip``` class sets padding on the top and bottom plus a border to split content. Nest an element with the class ```.container```to centre content. Strip has no ```max-width``` set so it will take the full width of its parent. Styles can be found in [_layout.strip.scss](https://github.com/primocss/primocss/blob/master/scss/_layout.strip.scss).
+
+```html
+<div class="strip">
+    <div class="container">
+    ...
+    </div>
+</div>
+```
+
+---
+
+##Cover container
+
+Cover containers can take the full height, half or third dependant on screen / browser size. Styles can be found in [_layout.cover.scss](https://github.com/primocss/primocss/blob/master/scss/_layout.cover.scss)
+
+```html
+<div class="cover">...</div>
+<div class="cover--half">...</div>
+<div class="cover--third">...</div>
+```
+
+In-conjunction with the ```.cover``` adding various modifies such as ```.cover--middle``` modifier will vertically centre any content. Other modifier classes are ```.cover--start```, ```.cover--center```, ```.cover--end```, ```.cover--top```, ```.cover--top```, ```.cover--bottom```. These all use either ```justify-content``` or ```align-items``` in conjunction with ```flex```. Styles can be found in [_tools.flex-modifiers](https://github.com/primocss/primocss/blob/master/scss/_tools.flex-modifiers.scss).
+
+```html
+<div class="cover cover--start">...</div>
+<div class="cover cover--center">...</div>
+<div class="cover cover--end">...</div>
+<div class="cover cover--top">...</div>
+<div class="cover cover--middle">...</div>
+<div class="cover cover--bottom">...</div>
+```
+
+---
+
+##Related content
+
+- (link: layout/grid text: Layout - grid)
+- (link: layout/spacing text: Layout - spacing)
