@@ -9,6 +9,7 @@ Text:
 All ```<img>``` elements are responsive friendly, PrimoCSS sets ```max-width: 100%;```, ```height: auto;``` and inherits any display properties. To make the ```<img>``` full width the utility class can be used ```.u-width-full```.
 
 ###### Example
+
 <div class="box box--panel">
 <img src="http://placehold.it/350x350" alt="Image example">
 </div>
@@ -22,6 +23,8 @@ All ```<img>``` elements are responsive friendly, PrimoCSS sets ```max-width: 10
 ## Figure and caption
 
 The ```<figure>``` element is intended to be used in conjunction with the ```<figcaption>``` element to mark up diagrams, illustrations, photos, and code examples . Styled with ```border-top``` and ```border-bottom``` to distinguish it from the document flow. Any media elements are centred to the ```<figure>``` element. Styles can be found in [_elements.media.scss](https://github.com/primocss/primocss/blob/master/scss/_elements.media.scss).
+
+######Example
 
 <div class="box box--panel">
 <figure>

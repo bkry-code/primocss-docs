@@ -8,7 +8,9 @@ Text:
 
 If you just need to include the latest compiled version of the PrimoCSS Framework, use our hosted version to begin your project.
 
-``` html
+######Example
+
+```html
 <link href="http://primocss.com/build/css/primocss.min.css" rel="stylesheet" media="screen" type="text/css">
 ```
 
@@ -16,6 +18,8 @@ Now you're all done, your site or project has PrimoCSS at its core and you can s
 
 ### Basic template
 
+######Example
+ 
 ```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -63,12 +67,16 @@ If you would like to help and improve this project in anyway or use the project 
 
 Development requires the latest version of [Node.js](https://nodejs.org/en/). To setup, here is a list of commands to help you get started:
 
+######Example
+
 ``` bash
 npm install
 gulp build
 ```
 
 Once complete open the ```build``` folder to see the newly created CSS. You can override any of the global settings for PrimoCSS via [_settings.defaults.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.defaults.scss) and [_settings.colors.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.colors.scss). Any new SCSS created can be tested by running the gulp linter and keeps all styles in check
+
+######Example
 
 ```bash
 gulp test

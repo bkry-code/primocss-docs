@@ -77,6 +77,8 @@ The predefined classes give any project the flexibility to create any layout req
 
 In-conjunction with the ```.grid-row``` adding various modifies such as ```.grid-row--middle``` modifier will vertically centre any content. Other modifier classes are ```.grid-row--start```, ```.grid-row--center```, ```.grid-row--end```, ```.grid-row--top```, ```.grid-row--top```, ```.grid-row--bottom```. These all use either ```justify-content``` or ```align-items``` in conjunction with ```flex```. Styles can be found in [_tools.flex-modifiers](https://github.com/primocss/primocss/blob/master/scss/_tools.flex-modifiers.scss).
 
+######Example
+
 ```html
 <div class="grid-row grid-row--start">...</div>
 <div class="grid-row grid-row--center">...</div>
@@ -165,6 +167,8 @@ Creates an offset left margin to mimic column space between itself and another g
 ##Nesting grids
 
 Grid has the ability to nest grids with inside any column. Repeat a ```.grid-row``` and a new 12 column grid can be made.
+
+######Example
 
 <div class="box box--panel">
 <div class="grid-row">

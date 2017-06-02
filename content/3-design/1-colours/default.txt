@@ -4,9 +4,9 @@ Title: Colours
 
 Text: 
 
-PrimoCSS Framework default colour variables. All variables can be found in [_settings.color.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.color.scss) and to override any variables change them in [_settings.variables.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.variables.scss) found in the root of the SCSS folder.  All colours here should set the visual tone of the framework.
-
 ##Base colours
+
+PrimoCSS Framework default colour variables. All variables can be found in [_settings.color.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.color.scss) and to override any variables change them in [_settings.variables.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.variables.scss) found in the root of the SCSS folder.  All colours here should set the visual tone of the framework.
 
 All base colours are the starting point in PrimoCSS, used for either backgrounds, text or to remove a colour.
 

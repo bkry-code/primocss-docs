@@ -8,7 +8,7 @@ Text:
 
 With PrimoCSS the ```<html>``` element holds a key amount of global styles. These filter further down into the framework including the default ```font-family```, ```font-size```, ```font-weight```, ```line-height``` and ```color``` and are set with the default global variables in [_settings.defaults.scss](https://github.com/primocss/primocss/blob/master/scss/_settings.defaults.scss).
 
-######Example SCSS
+######Example
 
 ```scss
 html {

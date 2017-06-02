@@ -6,7 +6,7 @@ Author: Richard McCartney
 
 ----
 
-Description: PrimoCSS, a simple and mobile friendly HTML, CSS and SCSS framework for web and UI developments.
+Description: PrimoCSS framework, a light weight mobile friendly SCSS / CSS framework for web & UI development.
 
 ----
 

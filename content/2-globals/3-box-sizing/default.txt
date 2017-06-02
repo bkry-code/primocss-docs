@@ -11,25 +11,23 @@ To globally turn off the box sizing, set ```$global-border-box``` to ```false```
 ######Example
 
 ```scss
-@if $global-border-box == true {
-  // GENERIC - Box sizing
+// GENERIC - Box sizing
 
-  //
-  //  All elements set as 'border-box'. Overwrite this on a
-  //  class by class or element basis.
-  //
+//
+//  All elements set as 'border-box'. Overwrite this on a
+//  class by class or element basis.
+//
 
-  html {
-    box-sizing: border-box;
-  }
+html {
+  box-sizing: border-box;
+}
 
-  * {
+* {
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
     box-sizing: inherit;
-
-    &::before,
-    &::after {
-      box-sizing: inherit;
-    }
   }
 }
 ```
