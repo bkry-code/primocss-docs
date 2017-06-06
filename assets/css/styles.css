@@ -19,6 +19,9 @@ fieldset,
 legend {
   padding: 0; }
 
+hr {
+  border: 0; }
+
 li > ol,
 li > ul {
   margin-bottom: 0; }
@@ -531,8 +534,7 @@ h6 {
       font-size: 0.875rem; } }
 
 hr {
-  border-top: 1px dashed #cbcbcb;
-  border-width: 0; }
+  border-top: 1px dotted #cbcbcb; }
 
 a {
   color: #005f87;
@@ -2034,7 +2036,7 @@ hr {
   border-bottom: 1px solid #eee;
   color: #0d2c54;
   padding: 16px; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     .sidebar__logo {
       padding: 64px; } }
 
@@ -2056,13 +2058,13 @@ hr {
     color: #0d2c54;
     background: none;
     font-weight: 400;
-    padding: 16px 16px 16px 64px;
+    padding: 16px;
     position: relative;
     text-align: left;
     width: 100%; }
-    @media screen and (max-width: 1024px) {
+    @media screen and (min-width: 1280px) {
       .sidebar__nav-title {
-        padding-left: 16px; } }
+        padding-left: 64px; } }
     .sidebar__nav-title:hover {
       background-color: rgba(229, 238, 251, 0.3);
       color: #0d2c54; }
@@ -2098,10 +2100,10 @@ hr {
     border-right: 0;
     border-top: 1px solid #eee;
     margin: 0;
-    padding: 16px 16px 16px 64px; }
-    @media screen and (max-width: 1024px) {
+    padding: 16px; }
+    @media screen and (min-width: 1280px) {
       .sidebar__nav-section {
-        padding-left: 16px; } }
+        padding-left: 64px; } }
   .sidebar__nav-link, .sidebar__nav-link:link {
     text-decoration: none; }
     .sidebar__nav-link[aria-current="page"], .sidebar__nav-link:link[aria-current="page"] {

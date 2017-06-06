@@ -156,7 +156,7 @@ hr {
     color: $color-navy;
     padding: $global-spacing-unit;
 
-    @include set-breakpoint-min(lg) {
+    @include set-breakpoint-min(xl) {
       padding: $global-spacing-unit-xl;
     }
   }
@@ -188,13 +188,13 @@ hr {
       color: $color-navy;
       background: none;
       font-weight: $font-weight-rg;
-      padding: $global-spacing-unit $global-spacing-unit $global-spacing-unit $global-spacing-unit-xl;
+      padding: $global-spacing-unit;
       position: relative;
       text-align: left;
       width: 100%;
 
-      @include set-breakpoint-max(lg) {
-        padding-left: $global-spacing-unit;
+      @include set-breakpoint-min(xl) {
+        padding-left: $global-spacing-unit-xl;
       }
 
       &:hover {
@@ -246,10 +246,10 @@ hr {
       }
 
       margin: 0;
-      padding: $global-spacing-unit $global-spacing-unit $global-spacing-unit $global-spacing-unit-xl;
+      padding: $global-spacing-unit;
 
-      @include set-breakpoint-max(lg) {
-        padding-left: $global-spacing-unit;
+      @include set-breakpoint-min(xl) {
+        padding-left: $global-spacing-unit-xl;
       }
     }
 
