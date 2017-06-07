@@ -10,13 +10,15 @@
 
     <?= css('assets/css/styles.css') ?>
 
+    <link rel="icon" type="image/png" href="<?= url('/assets/images/favicon.png') ?>" sizes="16x16">
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="<?= $site->title()->html() ?>">
     <meta name="twitter:creator" content="<?= $site->author()->html() ?>">
     <meta name="twitter:domain" content="<?php echo kirby()->urls()->index() ?>">
     <meta name="twitter:title" content="<?= $site->title()->html() ?>">
     <meta name="twitter:description" content="<?= $site->description()->html() ?>">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="<?= url('/assets/images/primocss-twitter.png') ?>">
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
