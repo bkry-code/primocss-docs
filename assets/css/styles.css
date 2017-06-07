@@ -2010,6 +2010,7 @@ hr {
     overflow-x: hidden; }
   .flex-container__sidebar {
     border-right: 0;
+    box-shadow: 1px 0 20px 1px rgba(17, 17, 17, 0.06), inset 1px 0 20px 1px rgba(255, 255, 255, 0.5);
     -ms-flex: 0 0 auto;
         flex: 0 0 auto;
     max-width: 100%;
@@ -2017,7 +2018,6 @@ hr {
     @media screen and (min-width: 1024px) {
       .flex-container__sidebar {
         border-right: 1px solid #eee;
-        box-shadow: 1px 0 20px 1px rgba(17, 17, 17, 0.06);
         max-width: 300px; } }
     @media screen and (min-width: 1280px) {
       .flex-container__sidebar {

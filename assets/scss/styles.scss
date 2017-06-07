@@ -105,6 +105,7 @@ hr {
       right: 0;
     }
 
+    box-shadow: 1px 0 20px 1px rgba($color-grey-darkest, .06);
     flex: 0 0 auto;
     max-width: 100%;
     width: 100%;
@@ -114,7 +115,6 @@ hr {
         right: 1px solid $color-grey-lighter;
       }
 
-      box-shadow: 1px 0 20px 1px rgba($color-grey-darkest, .06);
       max-width: 300px;
     }
 
@@ -292,7 +292,7 @@ hr {
       // When selected using aria-selected changes the '+' to a '-'
       &[aria-selected="true"] {
         border-color: $color-blue;
-        
+
         &:after {
           @include pseudo($content: '-');
           background-color: $color-blue;
