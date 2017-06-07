@@ -2063,14 +2063,36 @@ hr {
 
 .sidebar__nav {
   margin: 0; }
+  @media screen and (max-width: 1024px) {
+    .sidebar__nav {
+      overflow-x: scroll;
+      border-bottom: 1px solid #eee; } }
   .sidebar__nav-list {
     list-style: none;
     padding: 0; }
+    @media screen and (max-width: 1024px) {
+      .sidebar__nav-list {
+        white-space: nowrap;
+        width: auto; } }
     .sidebar__nav-list .sidebar__nav-list {
       padding-left: 16px; }
+      @media screen and (max-width: 1024px) {
+        .sidebar__nav-list .sidebar__nav-list {
+          border-bottom: 0;
+          padding-bottom: 0;
+          padding-left: 0; } }
+      @media screen and (max-width: 1024px) {
+        .sidebar__nav-list .sidebar__nav-list .sidebar__nav-item {
+          display: inline-block;
+          margin-right: 8px; } }
   .sidebar__nav-group {
     border-bottom: 1px solid #eee;
     margin: 0; }
+    @media screen and (max-width: 1024px) {
+      .sidebar__nav-group {
+        border-bottom: 0;
+        display: inline-block;
+        vertical-align: top; } }
   .sidebar__nav-title {
     font-size: 18px;
     font-size: 1.125rem;
@@ -2080,12 +2102,17 @@ hr {
     background: none;
     font-weight: 400;
     padding: 16px;
+    padding-right: 64px;
     position: relative;
     text-align: left;
     width: 100%; }
+    @media screen and (max-width: 1024px) {
+      .sidebar__nav-title {
+        border-bottom: 1px solid #eee; } }
     @media screen and (min-width: 1280px) {
       .sidebar__nav-title {
-        padding-left: 64px; } }
+        padding-left: 64px;
+        padding-right: 16px; } }
     .sidebar__nav-title:hover {
       background-color: rgba(229, 238, 251, 0.3);
       color: #0d2c54; }
@@ -2109,12 +2136,14 @@ hr {
       text-align: center;
       top: 16px;
       width: 27px; }
-    .sidebar__nav-title[aria-selected="true"]:after {
-      content: "-";
-      display: block;
-      position: absolute;
-      background-color: #00a6ed;
-      color: #fff; }
+    .sidebar__nav-title[aria-selected="true"] {
+      border-color: #00a6ed; }
+      .sidebar__nav-title[aria-selected="true"]:after {
+        content: "-";
+        display: block;
+        position: absolute;
+        background-color: #00a6ed;
+        color: #fff; }
   .sidebar__nav-section {
     border-bottom: 0;
     border-left: 0;
@@ -2122,6 +2151,9 @@ hr {
     border-top: 1px solid #eee;
     margin: 0;
     padding: 16px; }
+    @media screen and (max-width: 1024px) {
+      .sidebar__nav-section {
+        border-top: 0; } }
     @media screen and (min-width: 1280px) {
       .sidebar__nav-section {
         padding-left: 64px; } }

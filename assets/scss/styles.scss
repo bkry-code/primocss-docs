@@ -190,12 +190,35 @@ hr {
   &__nav {
     margin: 0;
 
+    @include set-breakpoint-max(lg) {
+      overflow-x: scroll;
+      border-bottom: 1px solid $color-grey-lighter;
+    }
+
     &-list {
       list-style: none;
       padding: 0;
 
+      @include set-breakpoint-max(lg) {
+        white-space: nowrap;
+        width: auto;
+      }
+
       .sidebar__nav-list {
         padding-left: $global-spacing-unit;
+
+        @include set-breakpoint-max(lg) {
+          border-bottom: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+        }
+
+        .sidebar__nav-item {
+          @include set-breakpoint-max(lg) {
+            display: inline-block;
+            margin-right: $global-spacing-unit-sm;
+          }
+        }
       }
     }
 
@@ -205,6 +228,12 @@ hr {
       }
 
       margin: 0;
+
+      @include set-breakpoint-max(lg) {
+        border-bottom: 0;
+        display: inline-block;
+        vertical-align: top;
+      }
     }
 
     &-title {
@@ -215,12 +244,20 @@ hr {
       background: none;
       font-weight: $font-weight-rg;
       padding: $global-spacing-unit;
+      padding-right: $global-spacing-unit-xl;
       position: relative;
       text-align: left;
       width: 100%;
 
+      @include set-breakpoint-max(lg) {
+        border: {
+          bottom: 1px solid $color-grey-lighter;
+        }
+      }
+
       @include set-breakpoint-min(xl) {
         padding-left: $global-spacing-unit-xl;
+        padding-right: $global-spacing-unit;
       }
 
       &:hover {
@@ -254,7 +291,8 @@ hr {
 
       // When selected using aria-selected changes the '+' to a '-'
       &[aria-selected="true"] {
-
+        border-color: $color-blue;
+        
         &:after {
           @include pseudo($content: '-');
           background-color: $color-blue;
@@ -273,6 +311,10 @@ hr {
 
       margin: 0;
       padding: $global-spacing-unit;
+
+      @include set-breakpoint-max(lg) {
+        border-top: 0;
+      }
 
       @include set-breakpoint-min(xl) {
         padding-left: $global-spacing-unit-xl;
